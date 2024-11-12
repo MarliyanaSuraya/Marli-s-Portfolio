@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="C:\Users\marliyana\OneDrive\Desktop\portfolio\assets\icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=DynaPuff:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <title>Marli's portfolio</title>
+    <style>
+          body,html {
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle, #f9556b31 30%, #f0ebd4 60%) ;
+            background-attachment: fixed;
+            justify-content: center;
+            align-items: center;
+            min-height:70vh;
+        }
+
+        .header{
+            top: 0;
+            left: 0;
+            margin-bottom: 70px;
+            width: 100%;
+            padding: 50px 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            text-decoration: none;
+        }
+
+        ::-webkit-scrollbar{
+        width: 15px;
+        }
+
+        ::-webkit-scrollbar-track{
+            box-shadow: inset 0 0 5px #f0ebd4; 
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb{
+            background: #bbb47e;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #c72c43; 
+        }
+
+        .topnav {
+            position: fixed;
+            right: 40px;
+            display: flex;
+            gap: 40px;
+            margin: 0px 0px 0px 900px ;
+            padding-top: 10px;
+        }
+        .topnav a{
+            font-family: 'Berkshire Swash', serif;
+            font-size: 25px;
+            font-weight: 500;
+            text-decoration: none;
+            color: #ff506a;
+            transition: color 0.3s, background 0.3s;
+            padding: 10px 16px;
+            border-radius: 6px;
+        }
+
+        .topnav a:hover{
+            color:#f0ebd4;
+            background:#c72c43;
+            transform: scale(1.05);
+        }
+
+
+        h1 {
+            font-size: 120px;
+            color:#ffffdd;
+            cursor: pointer;
+            font-family: 'Berkshire Swash', serif;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            padding-top: 30px;
+        }
+
+        h1:hover {
+            transform:scale(1.05);
+            color: #fdf7cd;
+            text-shadow:  4px 4px #bbb47e;
+        }
+
+        h2 {
+            font-size: 100px;
+            color:#ff506a;
+            cursor: pointer;
+            font-family: 'Berkshire Swash', serif;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin-top: -60px;
+            text-shadow:  2px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        h2:hover {
+            transform: scale(1.05);
+            color: #c72c43;
+            text-shadow:  4px 4px rgba(255, 0, 0, 0.2);
+        }
+
+        .container{
+            max-width: 800px;
+            border-radius: 15px;
+            margin-top: 100px;
+            margin-bottom: 350px;
+        }
+
+        .button-container {
+            max-width: 800px;
+            display: flex;
+            gap: 60px;
+        }
+
+        .button1{
+            max-width: 500px;
+            border-radius: 15px;
+            margin: 400px 0px 10px 180px;
+            display: flex;
+            align-items: center;
+            cursor: default;
+            background-color: #ff506a;
+            box-shadow: 0 5px 10px rgba(255, 0, 0, 0.2);
+        }
+
+        .button2{
+            max-width: 700px;
+            border-radius: 15px;
+            margin: 40px 0px 100px 180px;
+            display: flex;
+            align-items: center;
+            padding: 0px 5px;
+            cursor: default;
+            background-color: #f0ebd4;
+            box-shadow: 0 5px 10px rgba(255, 0, 0, 0.2);
+        }
+
+        .button3 {
+            max-width: 300px;
+            border-radius: 15px;
+            margin: 400px 0px 10px 0px;
+            display: flex;
+            align-items: center;
+            cursor: default;
+            background-color: #f0ebd4;
+            box-shadow: 0 5px 10px rgba(255, 0, 0, 0.2);
+        }
+
+        h3 {
+            font-size: 45px;
+            font-family: 'Berkshire Swash', serif;
+            color: #f0ebd4;
+            margin: 15px 80px 15px 80px;
+        }
+
+        h4 {
+            font-size: 25px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            color: #ff506a;
+            margin: 15px 20px 15px 20px; 
+        }
+
+        h5{
+            font-size: 17px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            color: #ff506a;
+            align-items: left;
+            justify-content: left;
+            display: flex;
+            margin: 24px 24px 24px 24px;
+        }
+
+        h6 {
+            font-size: 45px;
+            font-family: 'Berkshire Swash', serif;
+            color: black;
+            margin: 150px 80px 15px 80px;
+        }
+
+        h7 { 
+            font-size: 23px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            color: #ffffff;
+            align-items: left;
+            justify-content: left;
+            display: flex;
+            margin: 24px 24px 12px 24px;
+        }
+
+        h8 { 
+            font-size: 15px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            color: #ffffff;
+            align-items: left;
+            justify-content: left;
+            text-align: justify;
+            display: flex;
+            margin: 12px 26px 24px 26px;
+        }
+
+        .container2{
+            max-width: 1100px;
+            border-radius: 15px;
+            margin-top: 100px;
+            margin-bottom: 150px;
+            margin-left: 200px;
+            gap: 70px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .project1{
+            width: 320px;
+            box-shadow: 0 5px 10px rgba(255, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            background: linear-gradient(125deg, rgba(255, 160, 122, 0.489) 0%, rgba(238, 130, 238, 0.548) 100%);
+        }
+
+        .project1 img {
+            margin-top: 50px;
+        }
+
+        .project2{
+            width: 320px;
+            box-shadow: 0 5px 10px rgba(255, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            background: linear-gradient(125deg, rgba(255, 160, 122, 0.489) 0%, rgba(238, 130, 238, 0.548) 100%);
+        }
+
+        .project3{
+            width: 320px;
+            box-shadow: 0 5px 10px rgba(255, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            background: linear-gradient(125deg, rgba(255, 160, 122, 0.489) 0%, rgba(238, 130, 238, 0.548) 100%);
+        }
+
+        .project4{
+            width: 320px;
+            box-shadow: 0 4px 10px rgba(102, 102, 153, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            background: linear-gradient(125deg, rgba(135, 206, 235, 0.5) 0%, rgba(255, 218, 185, 0.5) 50%, rgba(216, 191, 216, 0.5) 100%);
+        }
+
+        .project5{
+            width: 320px;
+            box-shadow: 0 4px 10px rgba(102, 102, 153, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            background: linear-gradient(125deg, rgba(135, 206, 235, 0.5) 0%, rgba(255, 218, 185, 0.5) 50%, rgba(216, 191, 216, 0.5) 100%);
+        }
+
+        .project6{
+            width: 320px;
+            box-shadow: 0 4px 10px rgba(102, 102, 153, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            background: linear-gradient(125deg, rgba(135, 206, 235, 0.5) 0%, rgba(255, 218, 185, 0.5) 50%, rgba(216, 191, 216, 0.5) 100%);
+        }
+        
+        .line {
+            display: block;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1 id="title">Hello!</h1>
+
+        <script>
+            ScrollReveal().reveal('#title',{delay:200, origin:top, easing:'ease-in-out'});
+        </script>
+        
+        <h2 id="title2">Nice meeting you!</h2>
+
+        <script>
+            ScrollReveal().reveal('#title2',{delay:200, origin:top, easing:'ease-in-out'});
+        </script>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="button-container">
+                <div class="button1">
+                    <h3>About Me</h3>
+                </div>
+                <div class="button3">
+                    <h4>My resume</h4>
+                </div>
+            </div>
+            <div class="button2">
+                <h5>
+                        <span class="line">Hello! Thank you for coming to my portfolio! <br><br>
+                            My name is Marliyana Suraya, a fresh graduate with a background in Computer Science
+                            and a passion for design. I have experience in UI/UX projects, where I’ve designed 
+                            both applications and websites, focusing on creating intuitive and engaging user experiences.<br><br>
+                            In addition to my design work, I have hands-on experience in automation, which has equipped me 
+                            with an understanding of how technology can streamline processes and enhance user interactions.
+                            <br><br>
+                            I’m eager to continue expanding my skills in UI/UX and graphic design while exploring new tools 
+                            and techniques. Let’s connect and collaborate on projects!</span>
+                    </h5>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h6>My Projects</h6>
+        <div class="container2">
+            <div class="project1">
+                <img src="your-image1.jpg" alt="Project Image 1">
+                <h7>Final Year Project</h7>
+                <h8>This project uses machine learning to predict global population trends, presenting insights through 
+                    an interactive web platform for exploring demographic changes over time.</h8>
+            </div>
+            <div class="project2">
+                <h7>hello</h7>
+            </div>
+            <div class="project3">
+                <h7>hola</h7>
+            </div>
+            <div class="project4">
+                <h7>hola</h7>
+            </div>
+            <div class="project5">
+                <h7>annyeong</h7>
+            </div>
+            <div class="project6">
+                <h7>salam</h7>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <p>Get in touch!</p>
+    </section>
+</body>
+</html>
