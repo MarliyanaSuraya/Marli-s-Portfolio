@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <title>Pinterest Redesign</title>
+
+  <script>
+    function openTab(evt, tabContent) {
+    var i, tabCon, tab;
+
+    tabCon = document.getElementsByClassName("tabCon");
+    for (i = 0; i < tabCon.length; i++) {
+        tabCon[i].style.display = "none";
+    }
+
+    tab = document.getElementsByClassName("tab");
+    for (i = 0; i < tab.length; i++) {
+        tab[i].className = tab[i].className.replace(" active", "");
+    }
+
+    document.getElementById(tabContent).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
+
+    function setDefaultTab() {
+    document.getElementById("Overview").style.display = "block";
+    const defaultTab = document.querySelector(".tab");
+    if (defaultTab) {
+        defaultTab.className += " active";
+    }
+    }
+
+    window.onload = setDefaultTab;
+
+</script>
+
+  <style>
+
+    body, html {
+        height: 100%;
+        margin: 0;
+        position: relative;
+        overflow: hidden;
+    }
+
+    body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/bg5.png');
+        background-size: cover;
+        filter: blur(0px);
+        z-index: -1;
+        opacity: 0.5;
+    }
+
+
+    .container{
+        display: flex; 
+        gap: 30px;
+        justify-content: space-between; 
+        padding: 20px;
+        max-width: 1200px;
+    }
+
+    .column1{
+        width: 400px;
+    }
+
+    .icon1{
+      width: 300px;
+      margin: 30px 0 0 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(125deg, rgb(190, 201, 229) 0%, rgb(223, 202, 183) 50%, rgb(202, 226, 195) 100%);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 15px;
+      padding: 10px 0px 10px 0px;
+    }
+
+    .pro{
+        height: 200px;
+    }
+
+    .pro1{
+      height: 200px;
+    }
+
+    .tabs button{
+        width: 300px;
+        margin: 30px 0 0 30px;
+        height: 50px;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        background-color: #769d76;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        padding: 5px 0px 5px 0px;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+
+    .tabs button:hover{
+        background-color: #4a624a;
+        transform: scale(1.10);
+    }
+
+    .tabs button.active{
+        background-color: #4a624a;
+    }
+
+    @keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-50px); }
+    100% { transform: translateY(0); }
+    }
+
+    .column2{
+        width: 1000px;
+    }
+
+    .tabCon{
+        display: none;
+    }
+
+    .box-title{
+        width: 1000px;
+        background-color: #769d76;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+        padding: 5px 0px 5px 30px;
+        margin: 30px 0 0 30px;
+        box-sizing: border-box;
+    }
+
+    .content{
+        width: 1000px;
+        height: 495px;
+        background-color: #f0e8dd;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+        padding: 30px 70px 30px 40px;
+        margin: 35px 0 0 30px;
+        box-sizing: border-box;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .content::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .content::-webkit-scrollbar-thumb {
+        background: #567156;
+        border-radius: 10px;
+    }
+
+    .home{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .text-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pg{
+        height: 300px;
+        margin: 20px;
+    }
+
+    .pg1{
+        height: 300px;
+        margin-left: -40px;
+    }
+
+    .pg2{
+        height: 300px;
+        margin-left: -160px;
+    }
+    
+    h1{
+        font-size: 28px;
+        font-family:'Poppins', sans-serif;
+    }
+
+    h2{
+        font-size: 25px;
+        font-family:'Poppins', sans-serif;
+    }
+
+    h3{
+        font-size: 18px;
+        font-weight: 650;
+        font-family:'Poppins', sans-serif;
+        margin-bottom: -15px;
+        color: #0c3b13;
+        text-align: justify;
+        background-color: #567e6132;
+    }
+
+    h4{
+        font-size: 16px;
+        font-weight: 400;
+        font-family:'Poppins', sans-serif;
+        color: #0c3b13;
+        text-align: justify;
+        margin-bottom: 18px;
+    }
+
+    h5{
+        font-size: 14px;
+        font-weight: 400;
+        font-family:'Poppins', sans-serif;
+        color: #0c3b13;
+        text-align: justify;
+        margin-top: -10px;
+    }
+
+    h6{
+        font-size: 14px;
+        font-weight: 400;
+        font-family:'Poppins', sans-serif;
+        color: #0c3b13;
+        text-align: justify;
+        margin-bottom: -25px;
+    }
+
+    h7{
+        margin-bottom: 18px;
+    }
+
+
+  </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="column1">
+            <div class="icon1">
+                <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/pro3.png" class="pro">
+                <h1>Pinterest Redesign</h1>
+            </div>
+            <div class="tabs">
+                <button class="tab" onclick="openTab(event, 'Overview')" data-title="Overview">Overview</button>
+                <button class="tab" onclick="openTab(event, 'Features')" data-title="Features">Features</button>
+                <button class="tab" onclick="openTab(event, 'Methodologies')" data-title="Methodologies">Methodologies</button>
+                <button class="tab" onclick="openTab(event, 'Demo')" data-title="Demo">Demo</button>
+            </div>
+        </div>
+
+        <div class="column2">
+            <div id="Overview" class="tabCon">
+                <div class="box-title">
+                    <h2>Overview</h2>
+                </div>
+                <div class="content">
+                    <h3>Introduction </h3>
+                    </br>
+                    <h4>This project focuses on redesigning the Pinterest app to improve user experience, navigation, and visual appeal. The goal is to create a more intuitive and modern interface that enhances accessibility and engagement.
+                    </h4>
+
+                    <h3> Problem Statement </h3>
+                    </br>
+                    <h4>&emsp; • &ensp; The design needs modernization to align with current UI/UX trends.
+                    </br>
+                        &emsp; • &ensp; There is a need for a more cohesive and engaging color scheme.
+                    </br>
+                        &emsp; • &ensp; Key interface elements require improvements for better usability and navigation.
+                        </h4>
+                        
+                    <h3>Objective </h3>
+                    </br>
+                    <h4>&emsp; • &ensp; Modernize the layout for better aesthetics.
+                    </br>
+                        &emsp; • &ensp; Enhance the visual appeal of Pinterest by integrating a more cohesive design.
+                    </br>
+                        &emsp; • &ensp; Optimize navigation and usability through targeted design improvements.
+                    </h4>
+                </div>
+            </div>
+            <div id="Features" class="tabCon">
+                <div class="box-title">
+                    <h2>Features</h2>
+                </div>
+                <div class="content">
+                    <h3>Home Page</h3>
+                    <div class="home">
+                        <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/pinterest1.png" class="pg">
+                        <div class="text-container">
+                            <h5>• &ensp; Changed the navigation bar color to red, matching the Pinterest icon.
+                            </br>
+                                • &ensp; Enhances visual appeal, making the design more eye-catching and 
+                            </br>
+                                &nbsp; &nbsp; &nbsp; attractive.
+                            </br>
+                                • &ensp; Modified the navigation bar by adding a "Create Post" button for 
+                            </br>
+                                &nbsp; &nbsp; &nbsp; easier content creation.</h5>
+                        </div>
+                    </div>
+                    <div class="home">
+                        <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/pinterest2.png" class="pg">
+                        <div class="text-container">
+                            <h5>• &ensp; Improved notification readability by removing unnecessary 
+                            </br>
+                                &nbsp; &nbsp; &nbsp; notifications.
+                            </br>
+                                • &ensp; Retained only relevant notifications, such as likes and comments.</h5>
+                        </div>
+                    </div>
+                    <div class="home">
+                        <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/pinterest3.png" class="pg">
+                        <div class="text-container">
+                            <h5>• &ensp; Improved visibility of pins from the user's following list.
+                            </br>
+                                • &ensp; Added a "Following" tab to display only pins from followed users.
+                            </br>
+                                • &ensp; Included the username of the pin's creator for better clarity.
+                            </br>
+                                • &ensp; Removed unrelated pins from the home page feed.</h5>
+                        </div>
+                    </div>
+                    <div class="home">
+                        <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/pinterest4.png" class="pg">
+                        <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/pinterest5.png" class="pg1">
+                        <div class="text-container">
+                            <h5>• &ensp; Uploading pins was complicated 
+                            </br>
+                                &nbsp; &nbsp; &nbsp; and required multiple steps.
+                            </br>
+                                • &ensp; The old upload button was only 
+                            </br>
+                                &nbsp; &nbsp; &nbsp; only accessible from the profile.
+                            </br>
+                                • &ensp; Moved the upload button to the 
+                            </br>
+                                &nbsp; &nbsp; &nbsp; center of the navigation bar.</h5>
+                        </div>
+                    </div>
+                    <h3>Pin Interface</h3>
+                    <div class="home">
+                        <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/pinterest6.png" class="pg">
+                        <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/pinterest7.png" class="pg2">
+                        <div class="text-container">
+                            <h5>• &ensp; The old interface lacked a button to view more 
+                            </br>
+                                &nbsp; &nbsp; &nbsp; related pins.
+                            </br>
+                                • &ensp; Added a "Show More" button at the bottom to 
+                            </br>
+                                &nbsp; &nbsp; &nbsp; display additional related pins.
+                            </br>
+                                • &ensp; Limited interaction features in the old interface, 
+                            </br>
+                                &nbsp; &nbsp; &nbsp; with only pins shown.
+                            </br>
+                                • &ensp; Add a like button to enhance user interaction.
+                            </br>
+                                • &ensp; Rearranged buttons for better visibility.
+                            </h5>                                
+                        </div>
+                    </div>
+                    <h3>Message Interface</h3>
+                    <div class="home">
+                        <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/pinterest8.png" class="pg">
+                        <div class="text-container">
+                            <h5>• &ensp; The old interface only allowed one-on-one messaging.
+                            </br>
+                                • &ensp; Added a group messaging feature where users can create groups by 
+                            </br>
+                                &nbsp; &nbsp; &nbsp; adding contacts or followers.
+                            </br>
+                                • &ensp; Previously, there was no option to share pins through messages.
+                            </br>
+                                • &ensp;Added a pin button in each chat to allow users to send pins directly.</h5>
+                        </div>
+                    </div>
+                    <h3>Search Interface</h3>
+                    <div class="home">
+                        <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/pinterest9.png" class="pg">
+                        <div class="text-container">
+                            <h5>• &ensp; Many users preferred a speech recognition feature for searching.
+                            </br>
+                                • &ensp; Added a speech search button in the search bar.
+                            </br>
+                                • &ensp; Allows users to search using voice commands.</h5>
+                        </div>
+                    </div>
+                    <h3>Profile Interface</h3>
+                    <div class="home">
+                        <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/pinterest10.png" class="pg">
+                        <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/pinterest11.png" class="pg2">
+                        <div class="text-container">
+                            <h5>• &ensp; The old interface lacked an edit profile button.
+                            </br>
+                                • &ensp; Added an edit profile button in the new interface.
+                            </br>
+                                • &ensp; Allows users to easily update their profile picture 
+                            </br>
+                                &nbsp; &nbsp; &nbsp; and biography.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Methodologies" class="tabCon">
+                <div class="box-title">
+                    <h2>Methodologies</h2>
+                </div>
+                <div class="content">
+                    <h3>Survey & Data Collection</h3>
+                    </br>
+                    <h4>&emsp; • &ensp; Created a questionnaire to gather feedback on the Pinterest app's design and usability.
+                    </br>
+                        &emsp; • &ensp; Focused on aspects like aesthetic cohesiveness and user experience.</h4>
+                    
+                    <h3>Usability Evaluation (SUS Analysis)</h3>
+                    </br>    
+                    <h4>&emsp; • &ensp; Applied the System Usability Scale (SUS) to assess survey responses.
+                    </br>
+                        &emsp; • &ensp; The survey yielded an average SUS score of 58 (below the standard average of 68).
+                    </br>
+                        &emsp; • &ensp; Analysis showed most participants rated the app’s usability as poor (Grade D).</h4>
+
+                    <h3>Prototype Development</h3> 
+                    </br>
+                    <h4>&emsp; • &ensp; Create the protoype of the improved Pinterest interface using JustInMind.
+                    </br>
+                        &emsp; • &ensp; Incorporated user feedback into the redesign, improving navigation, aesthetics, and features.</h4>
+
+                    <h3>Project Documentation</h3>
+                    </br>
+                    <h4>&emsp; • &ensp; Compiled findings, analysis, and redesign details into a final project report.</h4>
+                </div>
+            </div>
+            <div id="Demo" class="tabCon">
+                <div class="box-title">
+                    <h2>Demo</h2>
+                </div>
+                <div class="content">
+                    <iframe width="800" height="600"
+                        src="https://www.youtube.com/embed/jtP_GoIWrcY?&mute=1&loop=1&vq=hd1080">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
