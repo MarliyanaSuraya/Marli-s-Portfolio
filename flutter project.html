@@ -67,7 +67,8 @@
         gap: 30px;
         justify-content: space-between; 
         padding: 20px;
-        max-width: 1200px;
+        max-width: auto;
+        margin-right: 100px;
     }
 
     .column1{
@@ -128,7 +129,7 @@
     }
 
     .column2{
-        width: 1000px;
+        width: auto;
     }
 
     .tabCon{
@@ -136,7 +137,7 @@
     }
 
     .box-title{
-        width: 1000px;
+        width: auto;
         background-color: #d2728a;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
         border-radius: 15px;
@@ -146,7 +147,7 @@
     }
 
     .content{
-        width: 1000px;
+        width: auto;
         height: 495px;
         background-color: #f0e8dd;
         display: flex;
@@ -156,8 +157,14 @@
         padding: 30px 70px 30px 40px;
         margin: 35px 0 0 30px;
         box-sizing: border-box;
-        overflow-y: auto;
         overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    .content iframe{
+        flex-grow: 1;
+        min-height: 430px;
+        width: auto;
     }
 
     .content::-webkit-scrollbar {
@@ -237,8 +244,19 @@
         margin-bottom: -20px;
     }
 
+    ul {
+        font-size: 16px;
+        font-weight: 400;
+        font-family:'Poppins', sans-serif;
+        color: #481010;
+        text-align: justify;
+        margin-bottom: 18px;
+    }
+
 
   </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 </head>
 <body>
@@ -269,25 +287,25 @@
                     
                     <h3> Problem Statement </h3>
                     </br>
-                    <h4>&emsp; • &ensp; Lack of an efficient system for students to address complaints and seek help.
-                    </br>
-                        &emsp; • &ensp; Students struggle to resolve issues due to unclear points of contact.
-                    </br>
-                        &emsp; • &ensp; Resolving issues takes more time than necessary.
-                        </h4>
+                    <ul>
+                        <li>Lack of an efficient system for students to address complaints and seek help.</li>
+                        <li>Students struggle to resolve issues due to unclear points of contact.</li>
+                        <li>Resolving issues takes more time than necessary.</li>
+                    </ul>
                         
                     <h3>Objective </h3>
                     </br>
-                    <h4>&emsp; • &ensp; To lodge college campus grievance
-                    </br>
-                        &emsp; • &ensp; Provide information related to campus.
-                    </br>
-                        &emsp; • &ensp; Improves the settlement process and the overall students experience by fostering 
-                    </br> 
-                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; effective communication.
-                    </br>
-                    &emsp; • &ensp; To receive information and express concerns more effectively.
-                    </h4>
+                    <ul>
+                        <li>To lodge college campus grievance.</li>
+                        <li>Provide information related to campus.</li>
+                        <li>Improves the settlement process and the overall students experience by fostering effective communication.</li>
+                        <li>To receive information and express concerns more effectively.</li>
+                    </ul>
+                    <h4>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; 
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                        &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h4>
                 </div>
             </div>
             <div id="Features" class="tabCon">
@@ -299,82 +317,87 @@
                     <div class="login">
                         <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/flutter1.png" class="pg">
                         <div class="text-container">
-                            <h5>• &ensp; Displays UPM logo for familiarity and association with the university.
-                            </br>
-                                • &ensp; Includes a form for students to enter their username and password.
-                            </br>
-                                • &ensp; Provides a login button to access the application.
-                            </h5>
+                            <ul>
+                                <li>Displays UPM logo for familiarity and association with the university.</li>
+                                <li>Includes a form for students to enter their username and password.</li>
+                                <li>Provides a login button to access the application.</li>
+                            </ul>
                         </div>
                     </div>
                     <h3>Home Page</h3>
                     <div class="home">
                         <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/flutter2.png" class="pg">
                         <div class="text-container">
-                            <h5><b>• &ensp; Contains three buttons for different categories</b></h5>
-                            </br>
-                                <h5><b>&emsp; &nbsp; ◦ &ensp; File a Complaint: </b> &nbsp; students to submit a complaint.
-                            </br>
-                                <b>&emsp; &nbsp; ◦ &ensp; My Complaint: </b> &nbsp; Displays previously lodged complaints.
-                            </br>
-                                <b>&emsp; &nbsp; ◦ &ensp; Retrieve Information:</b> &nbsp; Provides access to relevant information.</h5>
+                            <ul>
+                                <li><b>Contains three buttons for different categories:</b></li>
+                                    <ul>
+                                        <li>File a Complaint: &nbsp; students to submit a complaint.</li>
+                                        <li>My Complaint: &nbsp; Displays previously lodged complaints.</li>
+                                        <li>Retrieve Information: &nbsp; Provides access to relevant information.</li>
+                                    </ul>
+                            </ul>
                         </div>
                     </div>
                     <h3>Lodge Complaint Page</h3>
                     <div class="home">
                         <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/flutter3.png" class="pg">
                         <div class="text-container">
-                        <h5>• &ensp; Displays a text field labeled "Enter your complaint here".
-                        </br>
-                            • &ensp; Includes a submit button to lodge the complaint.</h5>
+                            <ul>
+                                <li>Displays a text field labeled "Enter your complaint here".</li>
+                                <li>Includes a submit button to lodge the complaint.</li>
+                            </ul>
                         </div>
                     </div>
                     <h3>Lodge Complaint Page</h3>
                     <div class="home">
                         <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/flutter4.png" class="pg">
                         <div class="text-container">
-                        <h5>• &ensp; Includes a button for students to select the date of the complaint.
-                        </br>
-                            • &ensp; When the button is pressed, a calendar pop-up appears for students to 
-                        </br>
-                            &nbsp; &nbsp; &nbsp; pick a date.</h5>
+                            <ul>
+                                <li>Includes a button for students to select the date of the complaint.</li>
+                                <li>When the button is pressed, a calendar pop-up appears for students to pick a date</li>
+                            </ul>
                         </div>
                     </div>
                     <h3>Lodge Complaint Page</h3>
                     <div class="home">
                         <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/flutter5.png" class="pg">
                         <div class="text-container">
-                        <h5>• &ensp; Displays a pop-up confirmation upon complaint submission.
-                        </br>
-                            • &ensp; Shows the text of the complaint and the selected date.</h5>
+                            <ul>
+                                <li>Displays a pop-up confirmation upon complaint submission.</li>
+                                <li>Shows the text of the complaint and the selected date.</li>
+                            </ul>
                         </div>
                     </div>
                     <h3>View Complaint Page</h3>
                     <div class="home">
                         <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/flutter6.png" class="pg">
                         <div class="text-container">
-                        <h5>• &ensp; Lists all previously submitted complaints.
-                        </br>
-                            • &ensp; Allows users to delete any complaint they wish.</h5>
+                            <ul>
+                                <li>Lists all previously submitted complaints.</li>
+                                <li>Allows users to delete any complaint they wish.</li>
+                            </ul>
                         </div>
                     </div>
                     <h3>Contact Page</h3>
                     <div class="home">
                         <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/flutter7.png" class="pg">
                         <div class="text-container">
-                        <h5>• &ensp; Displays a list of administrators, wardens, or higher-ups.
-                        </br>
-                            • &ensp; Includes their personal information:
-                        </br>
-                            &emsp; &nbsp; ◦ &ensp; Name
-                        </br>
-                            &emsp; &nbsp; ◦ &ensp; Position
-                        </br>
-                            &emsp; &nbsp; ◦ &ensp; Email
-                        </br>
-                            &emsp; &nbsp; ◦ &ensp; Phone number
-                        </br>
-                            &emsp; &nbsp; ◦ &ensp; Available hours</h5>
+                            <ul>
+                                <li>Displays a list of administrators, wardens, or higher-ups.</li>
+                                <li>Includes their personal information:</li>
+                                    <ul>
+                                        <li>Name</li>
+                                        <li>Position</li>
+                                        <li>Email</li>
+                                        <li>Phone Number</li>
+                                        <li>Available Hours</li>
+                                    </ul>
+                            </ul>
+                            <h4>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; 
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                                &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h4>
                         </div>
                     </div>
                 </div>
@@ -386,37 +409,47 @@
                 <div class="content">
                     <h3>Brainstorming & Ideation</h3>
                     </br>
-                    <h4>&emsp; • &ensp; Identifying the problem and defining the objectives.
-                    </br>
-                        &emsp; • &ensp; Researching existing solutions and gathering user requirements.</h4>
+                    <ul>
+                        <li>Identifying the problem and defining the objectives.</li>
+                        <li>Researching existing solutions and gathering user requirements.</li>
+                    </ul>
 
                     <h3>Information Visualization</h3> 
                     </br>
-                    <h4>&emsp; • &ensp; Creating an infographic to illustrate the app’s features and workflow.</h4>
+                    <ul>
+                        <li>Creating an infographic to illustrate the app’s features and workflow.</li>
+                    </ul>
     
                     <h3>Business Model Planning</h3>
                     </br>
-                    <h4>&emsp; • &ensp; Developing a Business Model Canvas to outline the value proposition,
-                    </br>   
-                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; key activities, resources, and revenue model.</h4>
-                    
+                    <ul>
+                        <li>Developing a Business Model Canvas to outline the value proposition, key activities, resources, and revenue model.</li>
+                    </ul>
+            
                     <h3>Prototype Development</h3> 
                     </br>   
-                    <h4>&emsp; • &ensp; Create a low-fidelity protoype as a reference.
-                    </br>
-                        &emsp; • &ensp; Designing wireframes and UI components.
-                    </br>
-                        &emsp; • &ensp; Developing the prototype using Flutter.</h4>
-
+                    <ul>
+                        <li>Create a low-fidelity protoype as a reference.</li>
+                        <li>Designing wireframes and UI components.</li>
+                        <li>Developing the prototype using Flutter.</li>
+                    </ul>
+                    
                     <h3>Project Documentation</h3>
                     </br>
-                    <h4>&emsp; • &ensp; Writing a comprehensive report detailing the project’s objectives,
-                    </br>
-                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; methodologies, and implementation.</h4>
-                        
+                    <ul>
+                        <li>Writing a comprehensive report detailing the project’s objectives, methodologies, and implementation.</li>
+                    </ul>
+            
                     <h3>Final Presentation</h3>
                     </br>
-                    <h4>&emsp; • &ensp; Presenting the project, showcasing the app’s functionality, and explaining its impact.</h4>
+                    <ul>
+                        <li>Presenting the project, showcasing the app’s functionality, and explaining its impact.</li>
+                    </ul>
+                    <h4>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; 
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                        &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h4>
                 </div>
             </div>
             <div id="Demo" class="tabCon">
@@ -427,6 +460,11 @@
                     <iframe width="800" height="600"
                         src="https://www.youtube.com/embed/QiNu92nQw6M?&mute=1&loop=1&vq=hd1080">
                     </iframe>
+                    <h4>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; 
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                        &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h4>
                 </div>
             </div>
         </div>
