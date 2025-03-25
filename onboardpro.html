@@ -67,7 +67,8 @@
         gap: 30px;
         justify-content: space-between; 
         padding: 20px;
-        max-width: 1200px;
+        max-width: auto;
+        margin-right: 100px;
     }
 
     .column1{
@@ -128,7 +129,7 @@
     }
 
     .column2{
-        width: 1000px;
+        width: auto;
     }
 
     .tabCon{
@@ -136,7 +137,7 @@
     }
 
     .box-title{
-        width: 1000px;
+        width: auto;
         background-color: #8c8fb8;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
         border-radius: 15px;
@@ -146,7 +147,7 @@
     }
 
     .content{
-        width: 1000px;
+        width: auto;
         height: 495px;
         background-color: #f0e8dd;
         display: flex;
@@ -156,8 +157,14 @@
         padding: 30px 70px 30px 40px;
         margin: 35px 0 0 30px;
         box-sizing: border-box;
-        overflow-y: auto;
         overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    .content iframe{
+        flex-grow: 1;
+        min-height: 430px;
+        width: auto;
     }
 
     .content::-webkit-scrollbar {
@@ -220,6 +227,15 @@
         margin-bottom: 18px;
     }
 
+    ul{
+        font-size: 16px;
+        font-weight: 400;
+        font-family:'Poppins', sans-serif;
+        color: #282b4a;
+        text-align: justify;
+        margin-bottom: 18px;
+    }
+
     h5{
         font-size: 14px;
         font-weight: 400;
@@ -244,6 +260,7 @@
 
 
   </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 <body>
@@ -274,23 +291,20 @@
                     
                     <h3> Problem Statement </h3>
                     </br>
-                    <h4>&emsp; • &ensp; Lack of early exposure in essential company information.
-                    </br>
-                        &emsp; • &ensp; Limited exposure through internal links and websites.
-                    </br>
-                        &emsp; • &ensp; Lack of access to insider insight
-                        </h4>
+                    <ul>
+                        <li>Lack of early exposure in essential company information.</li>
+                        <li>Limited exposure through internal links and websites.</li>
+                        <li>Lack of access to insider insight.</li>
+                    </ul>
                     
                     <h3>Objective </h3>
                     </br>
-                    <h4>&emsp; • &ensp; Centralize all essential Roche information.
-                    </br>
-                        &emsp; • &ensp; Provide early exposure to avoid new joiners from feeling lost
-                    </br>
-                        &emsp; • &ensp; Integrate formal and practical knowledge.
-                    </br>
-                    &emsp; • &ensp; Simplify access to onboarding resources.
-                    </h4>
+                    <ul>
+                        <li>Centralize all essential Roche information.</li>
+                        <li>Provide early exposure to avoid new joiners from feeling lost.</li>
+                        <li>Integrate formal and practical knowledge.</li>
+                        <li>Simplify access to onboarding resources.</li>
+                    </ul>
                 </div>
             </div>
             <div id="Features" class="tabCon">
@@ -302,111 +316,108 @@
                     <div class="home">
                         <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/onboard1.png" class="pg">
                         <div class="text-container">
-                            <h5><b>• &ensp; Profile Picture:</b> &nbsp; Clickable profile icon that directs users to the profile section.</h5>
-                            </br>
-                            <h5><b>• &ensp; "Getting Started" Banner:</b> &nbsp; Large, highlighted banner guiding new employees 
-                            </br>    
-                                &nbsp; &nbsp; &nbsp; to informal onboarding content.</h5>
-                            </br>
-                            <h5><b>• &ensp; Office Photo Carousel:</b> &nbsp; Slideshow showcasing images of the workplace.</h5>
-                            </br>
-                            <h5><b>• &ensp; Navigation Buttons</b></h5>
-                            </br>
-                            <h6>&emsp; &nbsp; ◦ &ensp; Overview Page</h6>
-                            <h6>&emsp; &nbsp; ◦ &ensp; Resources Page</h6>
-                            <h6>&emsp; &nbsp; ◦ &ensp; Links Page</h6>
-                            <h6>&emsp; &nbsp; ◦ &ensp; FAQ Page</h6>
-                            <h7>&nbsp; </h7>
+                            <ul>
+                                <li><b>Profile Picture:</b> &nbsp; Clickable profile icon that directs users to the profile section.</li>
+                                <li><b>"Getting Started" Banner:</b> &nbsp; Large, highlighted banner guiding new employees to informal onboarding content</li>
+                                <li><b>Office Photo Carousel:</b> &nbsp; Slideshow showcasing images of the workplace.</li>
+                                <li>Navigation Buttons:</li>
+                                    <ul>
+                                        <li>Overview Page</li>
+                                        <li>Resources Page</li>
+                                        <li>Links Page</li>
+                                        <li>FAQ Page</li>
+                                    </ul>
+                            </ul>
                         </div>
                     </div>
                     <h3>Getting Started Page</h3>
                     <div class="home">
                         <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/onboard2.png" class="pg">
                         <div class="text-container">
-                            <h5><b>• &ensp; Informal Information Carousel:</b> &nbsp; Displays tips and insights that are not found 
-                            </br>
-                                    &nbsp; &nbsp; &nbsp; in official documents but can be learned through socializing with employees.</h5>
-                            </br>
-                            <h5><b>• &ensp; Information in Carousel:</b></h5>
-                            <h6><b>&emsp; &nbsp; ◦ &ensp; Welcome Kit:</b> &nbsp; Details about items provided to new employees.</h6>
-                            <h6><b>&emsp; &nbsp; ◦ &ensp;Table Booking System:</b> &nbsp; How to book workspaces in the office.</h6>
-                            <h6><b>&emsp; &nbsp; ◦ &ensp;Food Ordering System:</b> &nbsp; Guide on the ordering meals system 
-                            </br>
-                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; and application within the company.</h6>
-                            <h6><b>&emsp; &nbsp; ◦ &ensp;Parking & Transportation:</b> &nbsp; Information on available parking 
-                            </br>
-                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; and commute options.</h6>
-                            <h6><b>&emsp; &nbsp; ◦ &ensp;Programs:</b> &nbsp; Overview of internal events and engagement activities.</h6>
-                            <h7>&nbsp; </h7>
+                            <ul>
+                                <li><b>Informal Information Carousel:</b> &nbsp; Displays tips and insights that are not found in official documents but can be learned through socializing with employees.</li>
+                                <li><b>Information in Carousel:</b></li>
+                                    <ul>
+                                        <li>Welcome Kit: &nbsp; Details about items provided to new employees.</li>
+                                        <li>Table Booking System: &nbsp; How to book workspaces in the office.</li>
+                                        <li>Food Ordering System: &nbsp; Guide on the ordering meals system and application within the company.</li>
+                                        <li>Parking & Transportion: &nbsp; Information on available parking and commute options.</li>
+                                        <li>Programs: &nbsp; Overview of internal events and engagement activities.</li>
+                                    </ul>
+                            </ul>
                         </div>
                     </div>
                     <h3>Overview Page</h3>
                     <div class="home">
                         <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/onboard3.png" class="pg">
                         <div class="text-container">
-                        <h5><b>• &ensp; About:</b> &nbsp; General introduction and background information of the company.</h5>
-                        <h5><b>• &ensp; Company's Locations:</b> &nbsp; Details about company's buildings and whereabout.</h5>
-                        <h5><b>• &ensp; Organizational Structure:</b> &nbsp; Insight into the company's hierarchy 
-                        </br>
-                                &nbsp; &nbsp; &nbsp; and management.</h5>
-                        <h5><b>• &ensp; Chapters:</b> &nbsp; Explanation of the company’s unique chapter-based structure.</h5>
-                        <h5><b>• &ensp; Events:</b> &nbsp; Showcases major company milestones, events, and key
-                        </br>
-                                &nbsp; &nbsp; &nbsp; accomplishments over the years.</h5>
-                        <h7>&nbsp; </h7>
+                            <ul>
+                                <li><b>About:</b> &nbsp; General introduction and background information of the company.</li>
+                                <li><b>Company's Location:</b> &nbsp; Details about company's buildings and whereabout.</li>
+                                <li><b>Organizational Structure:</b> &nbsp; Insight into the company's hierarchy and management.</li>
+                                <li><b>Chapters:</b> &nbsp; Explanation of the company’s unique chapter-based structure.</li>
+                                <li><b>Events:</b> &nbsp; Showcases major company milestones, events, and key accomplishments over the years.</li>
+                            </ul>
                         </div>
                     </div>
                     <h3>Resources Page</h3>
                     <div class="home">
                         <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/onboard4.png" class="pg">
                         <div class="text-container">
-                        <h5><b>• &ensp; Company Policies and Regulations:</b></h5>
-                        <h6><b>&emsp; &nbsp; ◦ &ensp; Code of conduct:</b> &nbsp; Ethical and professional behavior standards.</h6>
-                        <h6><b>&emsp; &nbsp; ◦ &ensp; Disciplinary Policy:</b> &nbsp; Rules and consequences for workplace misconduct.</h6>
-                        <h6><b>&emsp; &nbsp; ◦ &ensp; Employment Policy:</b> &nbsp; Employee rights, benefits, and workplace 
-                            </br>
-                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; expectations.</h6>
-                        </br>
-                        <h5><b>• &ensp; Training Modules:</b></h5>
-                        <h6><b>&emsp; &nbsp; ◦ &ensp; Compliance Training:</b> &nbsp; Safety regulations and workplace policies.</h6>
-                        <h6><b>&emsp; &nbsp; ◦ &ensp; Job Resposbilities:</b> &nbsp; Performance expectations and role-specific training.</h6>
-                        <h6><b>&emsp; &nbsp; ◦ &ensp; Agile Methodology:</b> &nbsp; Guidelines on using Agile in workplace projects.</h6>
-                        </br>
-                        <h5><b>• &ensp; New Hires Related Videos:</b></h5>
-                        <h6><b>&emsp; &nbsp; ◦ &ensp; Safety Video:</b> &nbsp; mergency procedures and workplace safety protocols.</h6>
-                        <h6><b>&emsp; &nbsp; ◦ &ensp; Company Goals & Directions:</b> &nbsp; Vision, mission, and strategic objectives.</h6>
-                        <h7>&nbsp; </h7>
+                            <ul>
+                                <li><b>Company Policies & Regulations</b></li>
+                                    <ul>
+                                        <li>Code of Conduct: &nbsp; Ethical and professional behavior standards.</li>
+                                        <li>Disciplinary Policy: &nbsp; Rules and consequences for workplace misconduct.</li>
+                                        <li>Employment Policy: &nbsp; Employee rights, benefits, and workplace expectations</li>
+                                    </ul>
+                                <li><b>Training Modules:</b></li>
+                                    <ul>
+                                        <li>Compliance Training: &nbsp; Safety regulations and workplace policies.</li>
+                                        <li>Job Responsibilities: &nbsp; Performance expectations and role-specific training.</li>
+                                        <li>Agile Methodology: &nbsp; Guidelines on using Agile in workplace projects.</li>
+                                    </ul>
+                                <li><b>New Hires Related Videos:</b></li>
+                                    <ul>
+                                        <li>Safety Videos: &nbsp; Emergency procedures and workplace safety protocols.</li>
+                                        <li>Company Goals & Directions: &nbsp; Vision, mission, and strategic objectives.</li>
+                                    </ul>
+                            </ul>
                         </div>
                     </div>
                     <h3>Links Page</h3>
                     <div class="home">
                         <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/onboard5.png" class="pg">
                         <div class="text-container">
-                        <h5><b>• &ensp; Google Site:</b></h5>
-                        <h6>&emsp; &nbsp; ◦ &ensp; Informatics</h6>
-                        <h6>&emsp; &nbsp; ◦ &ensp; Finance</h6>
-                        <h6>&emsp; &nbsp; ◦ &ensp; People & Culture</h6>
-                        <h6>&emsp; &nbsp; ◦ &ensp; Communications</h6>
-                        </br>
-                        <h5><b>• &ensp; Internal Site:</b></h5>
-                        <h6><b>&emsp; &nbsp; ◦ &ensp; Company's Brand Centre:</b>&nbsp; Branding guidelines and assets.</h6>
-                        <h6><b>&emsp; &nbsp; ◦ &ensp; Company's Google Spaces:</b>&nbsp; Collaboration hub for employees.</h6>
-                        <h6><b>&emsp; &nbsp; ◦ &ensp; Company's Google Chat:</b>&nbsp; Internal messaging and communication tool.</h6>
-                        <h7>&nbsp; </h7>
+                            <ul>
+                                <li><b>Google Site:</b></li>
+                                    <ul>
+                                        <li>Informatics</li>
+                                        <li>Finance</li>
+                                        <li>People & Culture</li>
+                                        <li>Communications</li>
+                                    </ul>
+                                <li><b>Internal Site:</b></li>
+                                    <ul>
+                                        <li>Company's Brand Centre: &nbsp; Branding guidelines and assets.</li>
+                                        <li>Company's Google Space: &nbsp; Collaboration hub for employees.</li>
+                                        <li>Company's Google Chat: &nbsp; Internal messaging and communication tool.</li>
+                                    </ul>
+                                </ul>
                         </div>
                     </div>
                     <h3>FAQ Page</h3>
                     <div class="home">
                         <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/onboard6.png" class="pg">
                         <div class="text-container">
-                        <h5><b>• &ensp; Common Questions & Answers:</b></h5>
-                        <h6>&emsp; &nbsp; ◦ &ensp; Provides essential information that new hires need to know.</h6>
-                        <h6>&emsp; &nbsp; ◦ &ensp; Covers topics like onboarding procedures, company culture, benefits, and 
-                        </br>
-                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; workplace expectations.</h6>
-                        <h6>&emsp; &nbsp; ◦ &ensp; Helps new employees quickly find answers to common queries, making
-                        </br>
-                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; their transition smoother.</h6>
+                            <ul>
+                                <li><b>Common Questions & Answers:</b></li>
+                                    <ul>
+                                        <li>Provides essential information that new hires need to know.</li>
+                                        <li>Covers topics like onboarding procedures, company culture, benefits, and workplace expectations.</li>
+                                        <li>Helps new employees quickly find answers to common queries, making their transition smoother.</li>
+                                    </ul>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -418,47 +429,49 @@
                 <div class="content">
                     <h3>Sponsorship & Stakeholder Engagement</h3>
                     </br>
-                    <h4>&emsp; • &ensp; Identified and secured a sponsor to oversee project progress, budgeting, and completion.
-                    </br>
-                        &emsp; • &ensp; Engaged stakeholders to ensure alignment with company goals and onboarding needs.</h4>
+                    <ul>
+                        <li>Identified and secured a sponsor to oversee project progress, budgeting, and completion.</li>
+                        <li>Engaged stakeholders to ensure alignment with company goals and onboarding needs.</li>
+                    </ul>
                     
                     <h3>Early Planning Meeting</h3>
-                    </br>    
-                    <h4>&emsp; • &ensp; Conducted an initial planning meeting to assign roles and responsibilities.
-                    </br>
-                        &emsp; • &ensp; Aligned project goals and defined key milestones.
-                    </br>
-                        &emsp; • &ensp; Discussed project scope, expectations, and success criteria.</h4>
+                    </br>  
+                    <ul>
+                        <li>Conducted an initial planning meeting to assign roles and responsibilities.</li>
+                        <li>Aligned project goals and defined key milestones.</li>
+                        <li>Discussed project scope, expectations, and success criteria.</li>
+                    </ul>  
 
                     <h3>Agile Methodology</h3> 
                     </br>
-                    <h4>&emsp; • &ensp; Adopted an iterative development approach to track progress efficiently.
-                    </br>
-                        &emsp; • &ensp; Used Scrum framework with sprint planning, reviews, and retrospectives.
-                    </br>
-                        &emsp; • &ensp; Ensured continuous improvement and adaptability throughout the project.</h4>
+                    <ul>
+                        <li>Adopted an iterative development approach to track progress efficiently.</li>
+                        <li>Used Scrum framework with sprint planning, reviews, and retrospectives.</li>
+                        <li>Ensured continuous improvement and adaptability throughout the project.</li>
+                    </ul>
 
                     <h3>Information Gathering & Platform Exploration</h3>
                     </br>
-                    <h4>&emsp; • &ensp; Collected essential onboarding materials, company policies, and resources.
-                    </br>
-                        &emsp; • &ensp; Conducted research on onboarding challenges to refine the application’s features.
-                    </br>   
-                        &emsp; • &ensp; Explored OutSystems, a low-code development platform, for application prototyping.</h4>
+                    <ul>
+                        <li>Collected essential onboarding materials, company policies, and resources.</li>
+                        <li>Conducted research on onboarding challenges to refine the application’s features.</li>
+                        <li>Explored OutSystems, a low-code development platform, for application prototyping.</li>
+                    </ul>
 
                     <h3>Application Prototyping with OutSystems</h3>
                     </br>
-                    <h4>&emsp; • &ensp; Developed the OnboardPro prototype in stages, building each page systematically.
-                    </br>
-                        &emsp; • &ensp; Integrated key features, including navigation, content accessibility, and user interaction.
-                    </br>
-                        &emsp; • &ensp; Conducted internal testing and refinements based on iterative feedback.</h4>
+                    <ul>
+                        <li>Developed the OnboardPro prototype in stages, building each page systematically.</li>
+                        <li>Integrated key features, including navigation, content accessibility, and user interaction.</li>
+                        <li>Conducted internal testing and refinements based on iterative feedback.</li>
+                    </ul>
                         
                     <h3>Final Showcase & Presentation</h3>
                     </br>
-                    <h4>&emsp; • &ensp;Demonstrated the completed application in a final showcase event.
-                    </br>
-                        &emsp; • &ensp; Highlighted project outcomes, key learnings, and future recommendations.</h4>
+                    <ul>
+                        <li>Demonstrated the completed application in a final showcase event.</li>
+                        <li>Highlighted project outcomes, key learnings, and future recommendations. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</li>
+                    </ul>
                 </div>
             </div>
             <div id="Demo" class="tabCon">
@@ -469,6 +482,11 @@
                     <iframe width="800" height="600"
                         src="https://www.youtube.com/embed/uenNqFgctAs?&mute=1&loop=1&vq=hd1080">
                     </iframe>
+                    <h4>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; 
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                        &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h4>
                 </div>
             </div>
         </div>
