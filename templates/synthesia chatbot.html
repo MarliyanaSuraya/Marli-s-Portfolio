@@ -67,7 +67,8 @@
         gap: 30px;
         justify-content: space-between; 
         padding: 20px;
-        max-width: 1200px;
+        max-width: auto;
+        margin-right: 100px;
     }
 
     .column1{
@@ -128,7 +129,7 @@
     }
 
     .column2{
-        width: 1000px;
+        width: auto;
     }
 
     .tabCon{
@@ -136,7 +137,7 @@
     }
 
     .box-title{
-        width: 1000px;
+        width: auto;
         background-color: #8c8fb8;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
         border-radius: 15px;
@@ -146,7 +147,7 @@
     }
 
     .content{
-        width: 1000px;
+        width: auto;
         height: 495px;
         background-color: #f0e8dd;
         display: flex;
@@ -156,8 +157,14 @@
         padding: 30px 70px 30px 40px;
         margin: 35px 0 0 30px;
         box-sizing: border-box;
-        overflow-y: auto;
+        overflow-y: scroll;
         overflow-x: hidden;
+    }
+
+    .content iframe{
+        flex-grow: 1;
+        min-height: 430px;
+        width: auto;
     }
 
     .content::-webkit-scrollbar {
@@ -187,9 +194,12 @@
     }
 
     .pg{
-        width: 600px;
+        max-width: 60%;
+        width: auto;
+        height: auto;
         margin: 60px 0px 80px 40px;
         border-radius: 15px;
+        display: block;
     }
 
     .pg1{
@@ -226,26 +236,18 @@
         margin-bottom: 18px;
     }
 
-    h5{
+    ul{
         font-size: 16px;
         font-weight: 400;
         font-family:'Poppins', sans-serif;
         color: #282b4a;
         text-align: justify;
-        margin-bottom: -35px;
-    }
-
-    h6{
-        font-size: 16px;
-        font-weight: 400;
-        font-family:'Poppins', sans-serif;
-        color: #481010;
-        text-align: justify;
-        margin-bottom: 5px;
+        margin-bottom: 18px;
     }
 
 
   </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 <body>
@@ -300,35 +302,28 @@
                     <h3>Functional Requirements</h3>
                     <div class="home">
                         <div class="text-container">
-                            <h5><b>• &ensp; Automated Responses</b></h5>
-                            </br>
-                            <h6>&emsp; &nbsp; ◦ &ensp; Upon receiving a user query, the chatbot should provide automated responses based on the relevant
-                            </br>
-                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; information extracted from the RocheWiki Synthesia FAQs.
-                            </br>
-                                &emsp; &nbsp; ◦ &ensp; The chatbot should prioritize RocheWiki Synthesia FAQs when answering questions.</h6>
-                            </br>
-                            <h5><b>• &ensp; Fallback Mechanism</b></h5>
-                            </br>
-                            <h6>&emsp; &nbsp; ◦ &ensp; If the user's question is not found in RocheWiki Synthesia FAQs, the chatbot must use the Vertex AI 
-                            </br>
-                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Grounding feature to perform a Google search and fetch appropriate answers.
-                            </br>
-                                &emsp; &nbsp; ◦ &ensp; The chatbot must ensure that the fallback search results are relevant and contextually appropriate.</h6>
-                            </br>
-                            <h5><b>• &ensp; Chatbot Integration</b></h5>
-                            </br>
-                            <h6>&emsp; &nbsp; ◦ &ensp; The chatbot should seamlessly integrate into the Synthesia chat community platform.
-                            </br>
-                                &emsp; &nbsp; ◦ &ensp; It should be accessible to users within the chat interface, available 24/7 to provide assistance.</h6>
-                            </br>
-                            <h5><b>• &ensp; Error Handling</b></h5>
-                            </br>
-                            <h6>&emsp; &nbsp; ◦ &ensp; The chatbot should handle unexpected user inputs gracefully and provide appropriate fallback 
-                            </br>
-                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; messages.
-                            </br>
-                                &emsp; &nbsp; ◦ &ensp; The chatbot should log errors for further analysis and improvement.</h6>
+                            <ul>
+                                <li><b>Automated Responses</b></li>
+                                    <ul>
+                                        <li>Upon receiving a user query, the chatbot should provide automated responses based on the relevant information extracted from the RocheWiki Synthesia FAQs.</li>
+                                        <li>The chatbot should prioritize RocheWiki Synthesia FAQs when answering questions.</li>
+                                    </ul>
+                                <li>Fallback Mechanism</li>
+                                    <ul>
+                                        <li>If the user's question is not found in RocheWiki Synthesia FAQs, the chatbot must use the Vertex AI Grounding feature to perform a Google search and fetch appropriate answers.</li>
+                                        <li>The chatbot must ensure that the fallback search results are relevant and contextually appropriate.</li>
+                                    </ul>
+                                <li>Chatbot Integration</li>
+                                    <ul>
+                                        <li>The chatbot should seamlessly integrate into the Synthesia chat community platform.</li>
+                                        <li>It should be accessible to users within the chat interface, available 24/7 to provide assistance.</li>
+                                    </ul>
+                                <li>Error Handling</li>
+                                    <ul>
+                                        <li>The chatbot should handle unexpected user inputs gracefully and provide appropriate fallback messages.</li>
+                                        <li>The chatbot should log errors for further analysis and improvement.</li>
+                                    </ul>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -356,6 +351,11 @@
                     <h3>Error Handling: Handle unexpected inputs.</h3>
                     <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/syn4.png" class="pg">
                     <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/syn5.png" class="pg">
+                    <h4>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; 
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                        &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h4>
                 </div>
             </div>
         </div>
