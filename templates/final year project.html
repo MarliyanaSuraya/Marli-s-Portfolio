@@ -68,7 +68,8 @@
         gap: 30px;
         justify-content: space-between; 
         padding: 20px;
-        max-width: 1200px;
+        max-width: auto;
+        margin-right: 100px;
     }
 
     .column1{
@@ -125,7 +126,7 @@
     }
 
     .column2{
-        width: 1000px;
+        width: auto;
     }
 
     .tabCon{
@@ -133,7 +134,7 @@
     }
 
     .box-title{
-        width: 1000px;
+        width: auto;
         background-color: #769d76;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
         border-radius: 15px;
@@ -143,7 +144,7 @@
     }
 
     .content{
-        width: 1000px;
+        width: auto;
         height: 495px;
         background-color: #f0e8dd;
         display: flex;
@@ -195,6 +196,15 @@
         margin-bottom: 18px;
     }
 
+    ul{
+        font-size: 15.5px;
+        font-weight: 400;
+        font-family:'Poppins', sans-serif;
+        color: #0c3b13;
+        text-align: justify;
+        margin-bottom: 18px;
+    }
+
     .demo-btn {
         margin-bottom: 20px;
         width: 755px;
@@ -216,6 +226,8 @@
 
 
   </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 </head>
 <body>
@@ -246,21 +258,19 @@
 
                     <h3> Problem Statement </h3>
                     </br>
-                    <h4>&emsp; • &ensp; Hard to track the growth or decline in population in different countries.
-                    </br>
-                        &emsp; • &ensp; Unfamiliarity of the factors influencing population growth or decline
-                    </br>
-                        &emsp; • &ensp; Data is static and not interactive.</h4>
+                    <ul>
+                        <li>Hard to track the growth or decline in population in different countries.</li>
+                        <li>Unfamiliarity of the factors influencing population growth or decline.</li>
+                        <li>Data is static and not interactive.</li>
+                    </ul>
 
                     <h3>Objective </h3>
                     </br>
-                    <h4>&emsp; • &ensp; To give users a platform to monitor population changes in varying countries.
-                    </br>
-                        &emsp; • &ensp; To determine how the nation's fertility rates, mortality rates and migration patterns correlate to its 
-                    </br>
-                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; population size.
-                    </br>
-                        &emsp; • &ensp; To visualize the data in an interactive way.</h4>
+                    <ul>
+                        <li>To give users a platform to monitor population changes in varying countries.</li>
+                        <li>To determine how the nation's fertility rates, mortality rates and migration patterns correlate to its population size.</li>
+                        <li>To visualize the data in an interactive way.</li>
+                    </ul>
                 </div>
             </div>
             <div id="Features" class="tabCon">
@@ -270,30 +280,33 @@
                 <div class="content">
                     <h3> Index Page </h3>
                     </br>
-                    <h4>&emsp; • &ensp; Country Selection:
-                    </br> 
-                        &emsp; &emsp; &nbsp; ◦ &ensp; Users can select specific countries to view population statistics and visualizations for those countries.
-                    </h4>
+                    <ul>
+                        <li>Country Selection:</li>
+                            <ul>
+                                <li>Users can select specific countries to view population statistics and visualizations for those countries.</li>
+                            </ul>
+                    </ul>
 
                     <h3>Visualization Page</h3>
                     </br>
-                    <h4>&emsp; • &ensp; Line Charts.
-                    </br>
-                        &emsp; • &ensp; Choropleth Maps.
-                    </br>
-                        &emsp; • &ensp; Scatter Charts</h4>
+                    <ul>
+                        <li>Line Charts.</li>
+                        <li>Choropleth Maps.</li>
+                        <li>Scatter Charts.</li>
+                    </ul>
                     
                     <h3>Analysis Page</h3>
                     </br>
-                    <h4>&emsp; • &ensp; Population Growth Rate Analysis:
-                    </br>
-                        &emsp; &emsp; &nbsp; ◦ &ensp; Displays the population growth rate for each selected country.
-                    </br></br>
-                        &emsp; • &ensp; Factor Correlation:
-                        </br>
-                        &emsp; &emsp; &nbsp; ◦ &ensp; Shows how various factors like fertility rate, death rate, and migration trends correlate with population 
-                        </br>
-                        &emsp; &emsp; &emsp; &ensp; growth for the selected countries.</h4>
+                    <ul>
+                        <li>Population Growth Rate Analysis:</li>
+                            <ul>
+                                <li>Displays the population growth rate for each selected country.</li>
+                            </ul>
+                        <li>Factor Correlation:</li>
+                            <ul>
+                                <li>Shows how various factors like fertility rate, death rate, and migration trends correlate with population growth for the selected countries.</li>
+                            </ul>
+                    </ul>
                 </div>
             </div>
             <div id="Methodologies" class="tabCon">
@@ -303,72 +316,70 @@
                 <div class="content">
                     <h3>Data Collection and Preparation</h3>
                     </br>
-                    <h4>&emsp; • &ensp; Data Source Identification by collecting demographic data from reliable sources such as government 
-                    </br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; databases or websites.
-                    </br>
-                        &emsp; • &ensp; Data Cleaning by preprocessing the raw data to remove any inconsistencies, missing values, or errors.
-                    </br>
-                        &emsp; • &ensp; Data Transformation by formatting the data into a structure suitable for analysis.</h4>
+                    <ul>
+                        <li>Data Source Identification by collecting demographic data from reliable sources such as government databases or websites.</li>
+                        <li>Data Cleaning by preprocessing the raw data to remove any inconsistencies, missing values, or errors.</li>
+                        <li>Data Transformation by formatting the data into a structure suitable for analysis.</li>
+                    </ul>
                     
                     <h3>Data Analysis</h3>
                     </br>
-                    <h4>&emsp; • &ensp; Exploratory Data Analysis (EDA): 
-                    </br>
-                        &emsp; &emsp; &nbsp; ◦ &ensp; Use statistical tools to understand the distribution, trends, and relationships within the data, 
-                    </br>
-                        &emsp; &emsp; &emsp; &ensp; focusing on migration trends, fertility rates, mortality rates, and population growth.
-                    </br></br>
-                        &emsp; • &ensp; Correlation Analysis:
-                    </br>
-                        &emsp; &emsp; &nbsp; ◦ &ensp; Identify and analyze the correlation between factors (fertility rate, death rate, migration trends) and 
-                    </br>
-                        &emsp; &emsp; &emsp; &ensp; population growth using correlation coefficients and regression analysis.
-                    </br></br>
-                        &emsp; • &ensp; Machine Learning:
-                    </br>
-                        &emsp; &emsp; &nbsp; ◦ &ensp; Apply machine learning algorithms to predict future population growth based on historical data.</h4>
+                    <ul>
+                        <li>Exploratory Data Analysis (EDA):</li>
+                            <ul>
+                                <li>Use statistical tools to understand the distribution, trends, and relationships within the data, focusing on migration trends, fertility rates, mortality rates, and population growth.</li>
+                            </ul>
+                        <li>Correlation Analysis:</li>
+                            <ul>
+                                <li>Identify and analyze the correlation between factors (fertility rate, death rate, migration trends) and population growth using correlation coefficients and regression analysis.</li>
+                            </ul>
+                        <li>Machine Learning:</li>
+                            <ul>
+                                <li>Apply machine learning algorithms to predict future population growth based on historical data.</li>
+                            </ul>
+                    </ul>
                     
                     <h3>Data Visualization</h3>
                     </br>
-                    <h4>&emsp; • &ensp; Interactive Dashboards: 
-                    </br>
-                        &emsp; &emsp; &nbsp; ◦ &ensp; Use Plotly Express for line charts, choropleth maps, and scatter plots. 
-                    </br> 
-                        &emsp; &emsp; &nbsp; ◦ &ensp; Use Pandas for data processing and manipulation. 
-                    </br> 
-                        &emsp; &emsp; &nbsp; ◦ &ensp; Use Flask to serve visualizations in a dynamic web interface.</h4>
+                    <ul>
+                        <li>Interactive Dashboards:</li>
+                            <ul>
+                                <li>Use Plotly Express for line charts, choropleth maps, and scatter plots.</li>
+                                <li>Use Pandas for data processing and manipulation.</li>
+                                <li>Use Flask to serve visualizations in a dynamic web interface.</li>
+                            </ul>
+                    </ul>
                     
                     <h3>Website Development</h3>
                     </br>
-                    <h4>&emsp; • &ensp; Backend Development: 
-                    </br>
-                        &emsp; &emsp; &nbsp; ◦ &ensp; Use Flask to set up the backend and handle data requests, country selection, and data processing.
-                    </br></br>
-                        &emsp; • &ensp; Frontend Development: 
-                    </br>
-                        &emsp; &emsp; &nbsp; ◦ &ensp; Design the user interface using HTML, CSS, and JavaScript to ensure the site is interactive, user-friendly,
-                    </br>
-                        &emsp; &emsp; &emsp; &ensp; and displays visualizations effectively.
-                    </br></br>
-                        &emsp; • &ensp; Integration of Visualizations: 
-                    </br>
-                        &emsp; &emsp; &nbsp; ◦ &ensp; Embed the charts, maps, and analysis into the web interface for an interactive experience.</h4>
+                    <ul>
+                        <li>Backend Development:</li>
+                            <ul>
+                                <li>Use Flask to set up the backend and handle data requests, country selection, and data processing.</li>
+                            </ul>
+                        <li>Frontend Development:</li>
+                            <ul>
+                                <li>Design the user interface using HTML, CSS, and JavaScript to ensure the site is interactive, user-friendly, and displays visualizations effectively.</li>
+                            </ul>
+                        <li>Integration of Visualizations:</li>
+                            <ul>
+                                <li>Embed the charts, maps, and analysis into the web interface for an interactive experience.</li>
+                                <li>Conduct user testing to ensure the website is intuitive, with clear visualizations and accurate analysis.</li>
+                            </ul>
+                    </ul>
                     
                     <h3>Validation and Evaluation</h3>
                     </br>
-                    <h4>&emsp; • &ensp; Validate predictions accuracy using techniques like cross-validation or holdout validation.
-                    </br>
-                        &emsp; • &ensp; Conduct user testing to ensure the website is intuitive, with clear visualizations and accurate analysis.</h4>
+                    <ul>
+                        <li>Validate predictions accuracy using techniques like cross-validation or holdout validation.</li>
+                        <li>Prepare a final presentation summarizing the project’s objectives, methodology, findings, and visualizations.</li>
+                    </ul>
                     
                     <h3>Documentation and Reporting</h3>
                     </br>
-                    <h4>&emsp; • &ensp; Document the entire process, including the data gathered, methodologies used, results from data analysis, 
-                    </br>
-                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; and design decisions for the website.
-                    </br>
-                        &emsp; • &ensp; Prepare a final presentation summarizing the project’s objectives, methodology, findings, 
-                    </br>
-                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; and visualizations.</h4>
+                    <ul>
+                        <li>Document the entire process, including the data gathered, methodologies used, results from data analysis, and design decisions for the website.</li>
+                    </ul>
                 </div>
             </div>
             <div id="Demo" class="tabCon">
