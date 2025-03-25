@@ -66,7 +66,8 @@ body, html {
         gap: 30px;
         justify-content: space-between; 
         padding: 20px;
-        max-width: 1200px;
+        max-width: auto;
+        margin-right: 100px;
     }
 
     .column1{
@@ -127,7 +128,7 @@ body, html {
     }
 
     .column2{
-        width: 1000px;
+        width: auto;
     }
 
     .tabCon{
@@ -135,7 +136,7 @@ body, html {
     }
 
     .box-title{
-        width: 1000px;
+        width: auto;
         background-color: #d2728a;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
         border-radius: 15px;
@@ -145,7 +146,7 @@ body, html {
     }
 
     .content{
-        width: 1000px;
+        width: auto;
         height: 495px;
         background-color: #f0e8dd;
         display: flex;
@@ -155,8 +156,14 @@ body, html {
         padding: 30px 70px 30px 40px;
         margin: 35px 0 0 30px;
         box-sizing: border-box;
-        overflow-y: auto;
+        overflow-y: scroll;
         overflow-x: hidden;
+    }
+
+    .content iframe{
+        flex-grow: 1;
+        min-height: 430px;
+        width: auto;
     }
 
     .content::-webkit-scrollbar {
@@ -182,14 +189,21 @@ body, html {
     }
 
     .pg{
-        width: 600px;
+        max-width: 60%;
+        width: auto;
+        height: auto;
         margin: 60px 0px 80px 40px;
         border-radius: 15px;
+        display: block;
     }
 
     .pg1{
-        width: 600px;
+        max-width: 60%;
+        width: auto;
+        height: auto;
         margin: 60px 0px 80px 40px;
+        border-radius: 15px;
+        display: block;
     }
     
     h1{
@@ -221,26 +235,19 @@ body, html {
         margin-bottom: 18px;
     }
 
-    h5{
+    ul{
         font-size: 16px;
         font-weight: 400;
         font-family:'Poppins', sans-serif;
         color: #481010;
         text-align: justify;
-        margin-bottom: -35px;
-    }
-
-    h6{
-        font-size: 16px;
-        font-weight: 400;
-        font-family:'Poppins', sans-serif;
-        color: #481010;
-        text-align: justify;
-        margin-bottom: 5px;
+        margin-bottom: 18px;
     }
 
 
   </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 </head>
 <body>
@@ -271,23 +278,20 @@ body, html {
 
                     <h3> Problem Statement </h3>
                     </br>
-                    <h4>&emsp; • &ensp; Increasing burglary rates highlight the need for advanced security solutions.
-                    </br>
-                        &emsp; • &ensp; Traditional locks are vulnerable to unauthorized access and key duplication.
-                    </br>
-                        &emsp; • &ensp; Need of a more convenient and secure way to control door access without relying on physical keys.
-                    </h4>
+                    <ul>
+                        <li>Increasing burglary rates highlight the need for advanced security solutions.</li>
+                        <li>Traditional locks are vulnerable to unauthorized access and key duplication.</li>
+                        <li>Need of a more convenient and secure way to control door access without relying on physical keys.</li>
+                    </ul>
 
                     <h3>Objective </h3>
                     </br>
-                    <h4>&emsp; • &ensp; Develop an RFID-based smart door lock system using Arduino and C++.
-                    </br>
-                        &emsp; • &ensp; Enable keyless entry using RFID technology for homes, offices, and businesses.
-                    </br>
-                        &emsp; • &ensp; Ensure secure access control by preventing unauthorized duplication of RFID cards.
-                    </br>
-                        &emsp; • &ensp; Provide a scalable and reprogrammable solution to adjust access permissions as needed.
-                    </h4>
+                    <ul>
+                        <li>Develop an RFID-based smart door lock system using Arduino and C++.</li>
+                        <li>Enable keyless entry using RFID technology for homes, offices, and businesses.</li>
+                        <li>Ensure secure access control by preventing unauthorized duplication of RFID cards.</li>
+                        <li>Provide a scalable and reprogrammable solution to adjust access permissions as needed.</li>
+                    </ul>
                 </div>
             </div>
             <div id="Features" class="tabCon">
@@ -297,23 +301,19 @@ body, html {
                 <div class="content">
                     <div class="home">
                         <div class="text-container">
-                            <h4><b>• &ensp; RFID Authentication:</b> Reads the UID tag of the RFID card when scanned on the RFID Reader Module.</h4>
-                            </br>
-                            <h4><b>• &ensp; Access Control:</b> Grants access if the scanned UID matches the authorized UID stored in the code; 
-                            </br>
-                                &nbsp; &nbsp; &nbsp; denies access otherwise.</h4>
-                            </br>
-                            <h4><b>• &ensp; LCD Display Feedback:</b> Displays a message on the LCD screen indicating whether access is 
-                            </br>
-                                &nbsp; &nbsp; &nbsp; granted or denied.</h4>
-                            </br>
-                            <h4><b>• &ensp; Arduino-Based Operation:</b> Uses an Arduino Uno R3 Board to process RFID data and control access.</h4>
-                            </br>
-                            <h4><b>• &ensp; Keyless Entry:</b> Eliminates the need for traditional keys, providing a more secure and 
-                            </br>
-                                &nbsp; &nbsp; &nbsp; convenient access method.</h4>
-                            </br>
-                            <h4><b>• &ensp; Real-Time Response:</b> Instantly verifies the RFID card and provides immediate feedback on the LCD display.</h4>
+                            <ul>
+                                <li>RFID Authentication: &nbsp; Reads the UID tag of the RFID card when scanned on the RFID Reader Module.</li>
+                                <li>Access Control: &nbsp; Grants access if the scanned UID matches the authorized UID stored in the code; denies access otherwise.</li>
+                                <li>LCD Display Feedback: &nbsp; Displays a message on the LCD screen indicating whether access is granted or denied.</li>
+                                <li>Arduino-Based Operation: &nbsp; Uses an Arduino Uno R3 Board to process RFID data and control access.</li>
+                                <li>Keyless Entry: &nbsp; Eliminates the need for traditional keys, providing a more secure and convenient access method.</li>
+                                <li>Real-Time Response: &nbsp; Instantly verifies the RFID card and provides immediate feedback on the LCD display.</li>
+                            </ul>
+                            <h4>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; 
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                                &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h4>
                         </div>
                     </div>
                 </div>
@@ -327,35 +327,33 @@ body, html {
                         <div class="text-container">
                             <h3>Component Setup</h3>
                             </br>
-                            <h4>&emsp; • &ensp; Choose the necessary hardware, including Arduino Uno R3, RFID Reader Module, RFID card, LCD display, 
-                            </br>
-                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; breadboard, and wires.
-                            </br>
-                                &emsp; • &ensp; Install Arduino IDE for programming and uploading code to the Arduino board.</h4>
+                            <ul>
+                                <li>Choose the necessary hardware, including Arduino Uno R3, RFID Reader Module, RFID card, LCD display, breadboard, and wires.</li>
+                                <li>Install Arduino IDE for programming and uploading code to the Arduino board.</li>
+                            </ul>
 
                             <h3>Circuit Assembly</h3>
                             </br>
-                            <h4>&emsp; • &ensp; Connect the RFID Reader Module to the Arduino Uno R3, ensuring proper wiring to ground, 5V, and digital 
-                            </br>
-                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pins (9, 10, 11, 12).
-                            </br>
-                                &emsp; • &ensp; Connect the LCD display screen to the Arduino, linking ground, 3.5V, analog input 4, and analog input 5. </h4>
+                            <ul>
+                                <li>Connect the RFID Reader Module to the Arduino Uno R3, ensuring proper wiring to ground, 5V, and digital pins (9, 10, 11, 12).</li>
+                                <li>Connect the LCD display screen to the Arduino, linking ground, 3.5V, analog input 4, and analog input 5.</li>
+                            </ul>
                             
                             <h3>RFID Authentication</h3>
                             </br>
-                            <h4>&emsp; • &ensp; Write and upload a C++ program using Arduino IDE to read the UID tag from the RFID card.
-                            </br>
-                                &emsp; • &ensp; Implement logic to compare scanned UID with predefined authorized UIDs stored in the code.
-                            </br>
-                                &emsp; • &ensp; Display access status ("Access Granted" or "Access Denied") on the LCD screen.</h4>
+                            <ul>
+                                <li>Write and upload a C++ program using Arduino IDE to read the UID tag from the RFID card.</li>
+                                <li>Implement logic to compare scanned UID with predefined authorized UIDs stored in the code.</li>
+                                <li>Display access status ("Access Granted" or "Access Denied") on the LCD screen.</li>
+                            </ul>
                             
                             <h3>Testing & Validation</h3>
                             </br>
-                            <h4>&emsp; • &ensp; Scan an authorized RFID card and check if access is granted with a correct LCD message.
-                            </br>
-                                &emsp; • &ensp;; Scan an unauthorized RFID card and ensure access is denied with the appropriate LCD message.
-                            </br>
-                                &emsp; • &ensp; Verify that all components function correctly and debug any errors in circuit connections or code.</h4>
+                            <ul>
+                                <li>Scan an authorized RFID card and check if access is granted with a correct LCD message.</li>
+                                <li>Scan an unauthorized RFID card and ensure access is denied with the appropriate LCD message.</li>
+                                <li>Verify that all components function correctly and debug any errors in circuit connections or code.</li>
+                            </ul>
                                 
                             <h3>Flowchart</h3>
                             <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/flowchart" class="pg1">
