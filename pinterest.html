@@ -68,7 +68,8 @@
         gap: 30px;
         justify-content: space-between; 
         padding: 20px;
-        max-width: 1200px;
+        max-width: auto;
+        margin-right: 100px;
     }
 
     .column1{
@@ -129,7 +130,7 @@
     }
 
     .column2{
-        width: 1000px;
+        width: auto;
     }
 
     .tabCon{
@@ -137,7 +138,7 @@
     }
 
     .box-title{
-        width: 1000px;
+        width: auto;
         background-color: #769d76;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
         border-radius: 15px;
@@ -147,7 +148,7 @@
     }
 
     .content{
-        width: 1000px;
+        width: auto;
         height: 495px;
         background-color: #f0e8dd;
         display: flex;
@@ -157,8 +158,14 @@
         padding: 30px 70px 30px 40px;
         margin: 35px 0 0 30px;
         box-sizing: border-box;
-        overflow-y: auto;
+        overflow-y: scroll;
         overflow-x: hidden;
+    }
+
+    .content iframe{
+        flex-grow: 1;
+        min-height: 430px;
+        width: auto;
     }
 
     .content::-webkit-scrollbar {
@@ -227,30 +234,19 @@
         margin-bottom: 18px;
     }
 
-    h5{
-        font-size: 14px;
+    ul {
+        font-size: 16px;
         font-weight: 400;
         font-family:'Poppins', sans-serif;
         color: #0c3b13;
         text-align: justify;
-        margin-top: -10px;
-    }
-
-    h6{
-        font-size: 14px;
-        font-weight: 400;
-        font-family:'Poppins', sans-serif;
-        color: #0c3b13;
-        text-align: justify;
-        margin-bottom: -25px;
-    }
-
-    h7{
         margin-bottom: 18px;
     }
 
 
   </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 </head>
 <body>
@@ -281,21 +277,19 @@
 
                     <h3> Problem Statement </h3>
                     </br>
-                    <h4>&emsp; • &ensp; The design needs modernization to align with current UI/UX trends.
-                    </br>
-                        &emsp; • &ensp; There is a need for a more cohesive and engaging color scheme.
-                    </br>
-                        &emsp; • &ensp; Key interface elements require improvements for better usability and navigation.
-                        </h4>
+                    <ul>
+                        <li>The design needs modernization to align with current UI/UX trends.</li>
+                        <li>There is a need for a more cohesive and engaging color scheme.</li>
+                        <li>Key interface elements require improvements for better usability and navigation.</li>
+                    </ul>
                         
                     <h3>Objective </h3>
                     </br>
-                    <h4>&emsp; • &ensp; Modernize the layout for better aesthetics.
-                    </br>
-                        &emsp; • &ensp; Enhance the visual appeal of Pinterest by integrating a more cohesive design.
-                    </br>
-                        &emsp; • &ensp; Optimize navigation and usability through targeted design improvements.
-                    </h4>
+                    <ul>
+                        <li>Modernize the layout for better aesthetics.</li>
+                        <li>Enhance the visual appeal of Pinterest by integrating a more cohesive design.</li>
+                        <li>Optimize navigation and usability through targeted design improvements.</li>
+                    </ul>
                 </div>
             </div>
             <div id="Features" class="tabCon">
@@ -307,54 +301,42 @@
                     <div class="home">
                         <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/pinterest1.png" class="pg">
                         <div class="text-container">
-                            <h5>• &ensp; Changed the navigation bar color to red, matching the Pinterest icon.
-                            </br>
-                                • &ensp; Enhances visual appeal, making the design more eye-catching and 
-                            </br>
-                                &nbsp; &nbsp; &nbsp; attractive.
-                            </br>
-                                • &ensp; Modified the navigation bar by adding a "Create Post" button for 
-                            </br>
-                                &nbsp; &nbsp; &nbsp; easier content creation.</h5>
+                            <ul>
+                                <li>Changed the navigation bar color to red, matching the Pinterest icon.</li>
+                                <li>Enhances visual appeal, making the design more eye-catching and attractive.</li>
+                                <li>Modified the navigation bar by adding a "Create Post" button for easier content creation.</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="home">
                         <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/pinterest2.png" class="pg">
                         <div class="text-container">
-                            <h5>• &ensp; Improved notification readability by removing unnecessary 
-                            </br>
-                                &nbsp; &nbsp; &nbsp; notifications.
-                            </br>
-                                • &ensp; Retained only relevant notifications, such as likes and comments.</h5>
+                            <ul>
+                                <li>Improved notification readability by removing unnecessary notifications.</li>
+                                <li>Retained only relevant notifications, such as likes and comments.</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="home">
                         <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/pinterest3.png" class="pg">
                         <div class="text-container">
-                            <h5>• &ensp; Improved visibility of pins from the user's following list.
-                            </br>
-                                • &ensp; Added a "Following" tab to display only pins from followed users.
-                            </br>
-                                • &ensp; Included the username of the pin's creator for better clarity.
-                            </br>
-                                • &ensp; Removed unrelated pins from the home page feed.</h5>
+                            <ul>
+                                <li>Improved visibility of pins from the user's following list.</li>
+                                <li>Added a "Following" tab to display only pins from followed users.</li>
+                                <li>Included the username of the pin's creator for better clarity.</li>
+                                <li>Removed unrelated pins from the home page feed.</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="home">
                         <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/pinterest4.png" class="pg">
                         <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/pinterest5.png" class="pg1">
                         <div class="text-container">
-                            <h5>• &ensp; Uploading pins was complicated 
-                            </br>
-                                &nbsp; &nbsp; &nbsp; and required multiple steps.
-                            </br>
-                                • &ensp; The old upload button was only 
-                            </br>
-                                &nbsp; &nbsp; &nbsp; only accessible from the profile.
-                            </br>
-                                • &ensp; Moved the upload button to the 
-                            </br>
-                                &nbsp; &nbsp; &nbsp; center of the navigation bar.</h5>
+                            <ul>
+                                <li>Uploading pins was complicated and required multiple steps. </li>
+                                <li>The old upload button was only accessible from the profile.</li>
+                                <li>Moved the upload button to the center of the navigation bar.</li>
+                            </ul>
                         </div>
                     </div>
                     <h3>Pin Interface</h3>
@@ -362,48 +344,36 @@
                         <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/pinterest6.png" class="pg">
                         <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/pinterest7.png" class="pg2">
                         <div class="text-container">
-                            <h5>• &ensp; The old interface lacked a button to view more 
-                            </br>
-                                &nbsp; &nbsp; &nbsp; related pins.
-                            </br>
-                                • &ensp; Added a "Show More" button at the bottom to 
-                            </br>
-                                &nbsp; &nbsp; &nbsp; display additional related pins.
-                            </br>
-                                • &ensp; Limited interaction features in the old interface, 
-                            </br>
-                                &nbsp; &nbsp; &nbsp; with only pins shown.
-                            </br>
-                                • &ensp; Add a like button to enhance user interaction.
-                            </br>
-                                • &ensp; Rearranged buttons for better visibility.
-                            </h5>                                
+                            <ul>
+                                <li>The old interface lacked a button to view more related pins.</li>
+                                <li>Added a "Show More" button at the bottom to display additional related pins.</li>
+                                <li>Limited interaction features in the old interface, with only pins shown.</li>
+                                <li>Add a like button to enhance user interaction.</li>
+                                <li>Rearranged buttons for better visibility.</li>
+                            </ul>                              
                         </div>
                     </div>
                     <h3>Message Interface</h3>
                     <div class="home">
                         <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/pinterest8.png" class="pg">
                         <div class="text-container">
-                            <h5>• &ensp; The old interface only allowed one-on-one messaging.
-                            </br>
-                                • &ensp; Added a group messaging feature where users can create groups by 
-                            </br>
-                                &nbsp; &nbsp; &nbsp; adding contacts or followers.
-                            </br>
-                                • &ensp; Previously, there was no option to share pins through messages.
-                            </br>
-                                • &ensp;Added a pin button in each chat to allow users to send pins directly.</h5>
+                            <ul>
+                                <li>The old interface only allowed one-on-one messaging.</li>
+                                <li>Added a group messaging feature where users can create groups by adding contacts or followers.</li>
+                                <li>Previously, there was no option to share pins through messages.</li>
+                                <li>Added a pin button in each chat to allow users to send pins directly.</li>
+                            </ul>
                         </div>
                     </div>
                     <h3>Search Interface</h3>
                     <div class="home">
                         <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/pinterest9.png" class="pg">
                         <div class="text-container">
-                            <h5>• &ensp; Many users preferred a speech recognition feature for searching.
-                            </br>
-                                • &ensp; Added a speech search button in the search bar.
-                            </br>
-                                • &ensp; Allows users to search using voice commands.</h5>
+                            <ul>
+                                <li>Many users preferred a speech recognition feature for searching.</li>
+                                <li>Added a speech search button in the search bar.</li>
+                                <li>Allows users to search using voice commands.</li>
+                            </ul>
                         </div>
                     </div>
                     <h3>Profile Interface</h3>
@@ -411,13 +381,11 @@
                         <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/pinterest10.png" class="pg">
                         <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/pinterest11.png" class="pg2">
                         <div class="text-container">
-                            <h5>• &ensp; The old interface lacked an edit profile button.
-                            </br>
-                                • &ensp; Added an edit profile button in the new interface.
-                            </br>
-                                • &ensp; Allows users to easily update their profile picture 
-                            </br>
-                                &nbsp; &nbsp; &nbsp; and biography.</h5>
+                            <ul>
+                                <li>The old interface lacked an edit profile button.</li>
+                                <li>Added an edit profile button in the new interface.</li>
+                                <li>Allows users to easily update their profile picture and biography.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -429,27 +397,31 @@
                 <div class="content">
                     <h3>Survey & Data Collection</h3>
                     </br>
-                    <h4>&emsp; • &ensp; Created a questionnaire to gather feedback on the Pinterest app's design and usability.
-                    </br>
-                        &emsp; • &ensp; Focused on aspects like aesthetic cohesiveness and user experience.</h4>
-                    
+                    <ul>
+                        <li>Created a questionnaire to gather feedback on the Pinterest app's design and usability.</li>
+                        <li>Focused on aspects like aesthetic cohesiveness and user experience.</li>
+                    </ul>
+                   
                     <h3>Usability Evaluation (SUS Analysis)</h3>
                     </br>    
-                    <h4>&emsp; • &ensp; Applied the System Usability Scale (SUS) to assess survey responses.
-                    </br>
-                        &emsp; • &ensp; The survey yielded an average SUS score of 58 (below the standard average of 68).
-                    </br>
-                        &emsp; • &ensp; Analysis showed most participants rated the app’s usability as poor (Grade D).</h4>
+                    <ul>
+                        <li>Applied the System Usability Scale (SUS) to assess survey responses.</li>
+                        <li>The survey yielded an average SUS score of 58 (below the standard average of 68).</li>
+                        <li>Analysis showed most participants rated the app’s usability as poor (Grade D).</li>
+                    </ul>
 
                     <h3>Prototype Development</h3> 
                     </br>
-                    <h4>&emsp; • &ensp; Create the protoype of the improved Pinterest interface using JustInMind.
-                    </br>
-                        &emsp; • &ensp; Incorporated user feedback into the redesign, improving navigation, aesthetics, and features.</h4>
-
-                    <h3>Project Documentation</h3>
-                    </br>
-                    <h4>&emsp; • &ensp; Compiled findings, analysis, and redesign details into a final project report.</h4>
+                    <ul>
+                        <li>Create the protoype of the improved Pinterest interface using JustInMind.</li>
+                        <li>Incorporated user feedback into the redesign, improving navigation, aesthetics, and features.</li>
+                        <li>Compiled findings, analysis, and redesign details into a final project report.</li>
+                    </ul>
+                    <h4>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; 
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                        &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h4>
                 </div>
             </div>
             <div id="Demo" class="tabCon">
@@ -460,6 +432,11 @@
                     <iframe width="800" height="600"
                         src="https://www.youtube.com/embed/jtP_GoIWrcY?&mute=1&loop=1&vq=hd1080">
                     </iframe>
+                    <h4>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; 
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                        &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h4>
                 </div>
             </div>
         </div>
