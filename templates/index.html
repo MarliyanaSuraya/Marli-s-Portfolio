@@ -17,6 +17,8 @@
             margin: 0;
             padding: 0;
             overflow-x: hidden;
+            overflow-y: auto;
+            background-image: linear-gradient(to right, #abb3a7 10%, #efe9d9 90%);
         }
 
         .header{
@@ -147,6 +149,7 @@
             flex-direction: column;
             justify-content: auto;
         }
+        
 
         ::-webkit-scrollbar{
         width: 15px;
@@ -479,7 +482,8 @@
         .protitle{
             background-color: #c27e79;
             box-shadow: 0 5px 10px rgba(104, 1, 35, 0.2);
-            margin: 150px 0px 0px 180px;
+            margin-top: 150px;
+            margin-left: 12%;
             border-radius: 15px;
             display: flex;
             max-width: 400px;
@@ -488,14 +492,15 @@
         .contitle{
             background-color: #c27e79;
             box-shadow: 0 5px 10px rgba(6, 4, 102, 0.2);
-            margin: 380px 0px 0px 180px;
+            margin-top: 380px;
+            margin-left: 12%;
             border-radius: 15px;
             display: flex;
             max-width: 400px;
         }
 
         .container2{
-            max-width: 1100px;
+            max-width: auto;
             border-radius: 15px;
             margin-top: 50px;
             margin-bottom: 350px;
@@ -503,6 +508,7 @@
             gap: 70px;
             display: flex;
             flex-wrap: wrap;
+            position: relative;
         }
 
         .pro {
@@ -679,10 +685,15 @@
         }
 
         .container3{
-            margin: 60px 0px 100px 180px;
+            margin: 60px;
+            margin-bottom: 100px;
+            margin-left: 200px;
             display: flex;
             gap: 50px;
             flex-wrap: wrap;
+            width: auto;
+            height: auto;
+            position: relative;
         }
 
         #copy {
@@ -691,7 +702,7 @@
 
         .card{
             position: relative;
-            width: 370px;
+            width: 320px;
             height: 250px;
             background: #f0ebd4;
             box-shadow: 0 5px 10px rgba(6, 4, 102, 0.2);
@@ -765,8 +776,11 @@
             height: 20px;
         }
 
+ 
 
     </style>
+    <link rel="icon" type="image/png" sizes="1024x1024" href="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
