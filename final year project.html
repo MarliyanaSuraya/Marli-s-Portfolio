@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-  <title>Final Year Project</title>
+  <title>RFID Door Lock</title>
 
   <script>
     function openTab(evt, tabContent) {
@@ -40,8 +40,7 @@
 </script>
 
   <style>
-
-    body, html {
+body, html {
         height: 100%;
         margin: 0;
         position: relative;
@@ -55,20 +54,20 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url('https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/bg5.png');
+        background-image: url('https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/bg2.png');
         background-size: cover;
         filter: blur(0px);
         z-index: -1;
         opacity: 0.5;
     }
 
-
     .container{
         display: flex; 
         gap: 30px;
         justify-content: space-between; 
         padding: 20px;
-        max-width: 1200px;
+        max-width: auto;
+        margin-right: 100px;
     }
 
     .column1{
@@ -88,6 +87,10 @@
       padding: 10px 0px 10px 0px;
     }
 
+    .pro{
+        height: 200px;
+    }
+
     .pro1{
       height: 200px;
     }
@@ -101,7 +104,7 @@
         font-size: 18px;
         font-family: 'Poppins', sans-serif;
         font-weight: 600;
-        background-color: #769d76;
+        background-color: #d2728a;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
         border-radius: 15px;
         padding: 5px 0px 5px 0px;
@@ -110,12 +113,12 @@
     }
 
     .tabs button:hover{
-        background-color: #4a624a;
+        background-color: #9b3b53;
         transform: scale(1.10);
     }
 
     .tabs button.active{
-        background-color: #4a624a;
+        background-color: #9b3b53;
     }
 
     @keyframes bounce {
@@ -125,7 +128,7 @@
     }
 
     .column2{
-        width: 1000px;
+        width: auto;
     }
 
     .tabCon{
@@ -133,8 +136,8 @@
     }
 
     .box-title{
-        width: 1000px;
-        background-color: #769d76;
+        width: auto;
+        background-color: #d2728a;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
         border-radius: 15px;
         padding: 5px 0px 5px 30px;
@@ -143,7 +146,7 @@
     }
 
     .content{
-        width: 1000px;
+        width: auto;
         height: 495px;
         background-color: #f0e8dd;
         display: flex;
@@ -153,8 +156,14 @@
         padding: 30px 70px 30px 40px;
         margin: 35px 0 0 30px;
         box-sizing: border-box;
-        overflow-y: auto;
+        overflow-y: scroll;
         overflow-x: hidden;
+    }
+
+    .content iframe{
+        flex-grow: 1;
+        min-height: 430px;
+        width: auto;
     }
 
     .content::-webkit-scrollbar {
@@ -162,8 +171,39 @@
     }
 
     .content::-webkit-scrollbar-thumb {
-        background: #567156;
+        background: #d2728a;
         border-radius: 10px;
+    }
+
+    .home{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .text-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pg{
+        max-width: 60%;
+        width: auto;
+        height: auto;
+        margin: 60px 0px 80px 40px;
+        border-radius: 15px;
+        display: block;
+    }
+
+    .pg1{
+        max-width: 60%;
+        width: auto;
+        height: auto;
+        margin: 60px 0px 80px 40px;
+        border-radius: 15px;
+        display: block;
     }
     
     h1{
@@ -181,49 +221,41 @@
         font-weight: 650;
         font-family:'Poppins', sans-serif;
         margin-bottom: -15px;
-        color: #0c3b13;
+        color: #481010;
         text-align: justify;
-        background-color: #567e6132;
+        background-color: #f9545432;
     }
 
     h4{
-        font-size: 15.5px;
+        font-size: 16px;
         font-weight: 400;
         font-family:'Poppins', sans-serif;
-        color: #0c3b13;
+        color: #481010;
         text-align: justify;
         margin-bottom: 18px;
     }
 
-    .demo-btn {
-        margin-bottom: 20px;
-        width: 755px;
-        display: inline-block;
-        padding: 12px 24px;
-        background: #769d76;
-        color: white;
+    ul{
         font-size: 16px;
-        font-family: 'Poppins', sans-serif;
-        text-decoration: none;
-        border-radius: 8px;
-        transition: background 0.3s ease-in-out;
-        box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    .demo-btn:hover {
-        background: #0056b3;
+        font-weight: 400;
+        font-family:'Poppins', sans-serif;
+        color: #481010;
+        text-align: justify;
+        margin-bottom: 18px;
     }
 
 
   </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 </head>
 <body>
     <div class="container">
         <div class="column1">
             <div class="icon1">
-                <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/pro1.png" class="pro1">
-                <h1>Final Year Project</h1>
+                <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/pro6.png" class="pro">
+                <h1>RFID Door Lock</h1>
             </div>
             <div class="tabs">
                 <button class="tab" onclick="openTab(event, 'Overview')" data-title="Overview">Overview</button>
@@ -241,26 +273,25 @@
                 <div class="content">
                     <h3>Introduction </h3>
                     </br>
-                    <h4>This project examines the factors influencing population growth, focusing on migration trends, fertility rates, and mortality rates, and their correlations with changing population patterns. By analyzing these factors, the study aims to address potential causes of disproportionate growth and provides a visual representation of the datasets to support its findings.
+                    <h4>With the rise in burglary cases, home security has become a major concern, making traditional locks less reliable. This project introduces an RFID-based smart door lock system built using Arduino for the hardware and programmed in C++ for serial communication. By leveraging RFID technology, the system enhances security and convenience by enabling keyless entry while preventing unauthorized access. This approach provides a modern, scalable, and efficient solution for homes, offices, and businesses.
                     </h4>
 
                     <h3> Problem Statement </h3>
                     </br>
-                    <h4>&emsp; • &ensp; Hard to track the growth or decline in population in different countries.
-                    </br>
-                        &emsp; • &ensp; Unfamiliarity of the factors influencing population growth or decline
-                    </br>
-                        &emsp; • &ensp; Data is static and not interactive.</h4>
+                    <ul>
+                        <li>Increasing burglary rates highlight the need for advanced security solutions.</li>
+                        <li>Traditional locks are vulnerable to unauthorized access and key duplication.</li>
+                        <li>Need of a more convenient and secure way to control door access without relying on physical keys.</li>
+                    </ul>
 
                     <h3>Objective </h3>
                     </br>
-                    <h4>&emsp; • &ensp; To give users a platform to monitor population changes in varying countries.
-                    </br>
-                        &emsp; • &ensp; To determine how the nation's fertility rates, mortality rates and migration patterns correlate to its 
-                    </br>
-                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; population size.
-                    </br>
-                        &emsp; • &ensp; To visualize the data in an interactive way.</h4>
+                    <ul>
+                        <li>Develop an RFID-based smart door lock system using Arduino and C++.</li>
+                        <li>Enable keyless entry using RFID technology for homes, offices, and businesses.</li>
+                        <li>Ensure secure access control by preventing unauthorized duplication of RFID cards.</li>
+                        <li>Provide a scalable and reprogrammable solution to adjust access permissions as needed.</li>
+                    </ul>
                 </div>
             </div>
             <div id="Features" class="tabCon">
@@ -268,32 +299,23 @@
                     <h2>Features</h2>
                 </div>
                 <div class="content">
-                    <h3> Index Page </h3>
-                    </br>
-                    <h4>&emsp; • &ensp; Country Selection:
-                    </br> 
-                        &emsp; &emsp; &nbsp; ◦ &ensp; Users can select specific countries to view population statistics and visualizations for those countries.
-                    </h4>
-
-                    <h3>Visualization Page</h3>
-                    </br>
-                    <h4>&emsp; • &ensp; Line Charts.
-                    </br>
-                        &emsp; • &ensp; Choropleth Maps.
-                    </br>
-                        &emsp; • &ensp; Scatter Charts</h4>
-                    
-                    <h3>Analysis Page</h3>
-                    </br>
-                    <h4>&emsp; • &ensp; Population Growth Rate Analysis:
-                    </br>
-                        &emsp; &emsp; &nbsp; ◦ &ensp; Displays the population growth rate for each selected country.
-                    </br></br>
-                        &emsp; • &ensp; Factor Correlation:
-                        </br>
-                        &emsp; &emsp; &nbsp; ◦ &ensp; Shows how various factors like fertility rate, death rate, and migration trends correlate with population 
-                        </br>
-                        &emsp; &emsp; &emsp; &ensp; growth for the selected countries.</h4>
+                    <div class="home">
+                        <div class="text-container">
+                            <ul>
+                                <li>RFID Authentication: &nbsp; Reads the UID tag of the RFID card when scanned on the RFID Reader Module.</li>
+                                <li>Access Control: &nbsp; Grants access if the scanned UID matches the authorized UID stored in the code; denies access otherwise.</li>
+                                <li>LCD Display Feedback: &nbsp; Displays a message on the LCD screen indicating whether access is granted or denied.</li>
+                                <li>Arduino-Based Operation: &nbsp; Uses an Arduino Uno R3 Board to process RFID data and control access.</li>
+                                <li>Keyless Entry: &nbsp; Eliminates the need for traditional keys, providing a more secure and convenient access method.</li>
+                                <li>Real-Time Response: &nbsp; Instantly verifies the RFID card and provides immediate feedback on the LCD display.</li>
+                            </ul>
+                            <h4>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; 
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                                &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="Methodologies" class="tabCon">
@@ -301,74 +323,42 @@
                     <h2>Methodologies</h2>
                 </div>
                 <div class="content">
-                    <h3>Data Collection and Preparation</h3>
-                    </br>
-                    <h4>&emsp; • &ensp; Data Source Identification by collecting demographic data from reliable sources such as government 
-                    </br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; databases or websites.
-                    </br>
-                        &emsp; • &ensp; Data Cleaning by preprocessing the raw data to remove any inconsistencies, missing values, or errors.
-                    </br>
-                        &emsp; • &ensp; Data Transformation by formatting the data into a structure suitable for analysis.</h4>
-                    
-                    <h3>Data Analysis</h3>
-                    </br>
-                    <h4>&emsp; • &ensp; Exploratory Data Analysis (EDA): 
-                    </br>
-                        &emsp; &emsp; &nbsp; ◦ &ensp; Use statistical tools to understand the distribution, trends, and relationships within the data, 
-                    </br>
-                        &emsp; &emsp; &emsp; &ensp; focusing on migration trends, fertility rates, mortality rates, and population growth.
-                    </br></br>
-                        &emsp; • &ensp; Correlation Analysis:
-                    </br>
-                        &emsp; &emsp; &nbsp; ◦ &ensp; Identify and analyze the correlation between factors (fertility rate, death rate, migration trends) and 
-                    </br>
-                        &emsp; &emsp; &emsp; &ensp; population growth using correlation coefficients and regression analysis.
-                    </br></br>
-                        &emsp; • &ensp; Machine Learning:
-                    </br>
-                        &emsp; &emsp; &nbsp; ◦ &ensp; Apply machine learning algorithms to predict future population growth based on historical data.</h4>
-                    
-                    <h3>Data Visualization</h3>
-                    </br>
-                    <h4>&emsp; • &ensp; Interactive Dashboards: 
-                    </br>
-                        &emsp; &emsp; &nbsp; ◦ &ensp; Use Plotly Express for line charts, choropleth maps, and scatter plots. 
-                    </br> 
-                        &emsp; &emsp; &nbsp; ◦ &ensp; Use Pandas for data processing and manipulation. 
-                    </br> 
-                        &emsp; &emsp; &nbsp; ◦ &ensp; Use Flask to serve visualizations in a dynamic web interface.</h4>
-                    
-                    <h3>Website Development</h3>
-                    </br>
-                    <h4>&emsp; • &ensp; Backend Development: 
-                    </br>
-                        &emsp; &emsp; &nbsp; ◦ &ensp; Use Flask to set up the backend and handle data requests, country selection, and data processing.
-                    </br></br>
-                        &emsp; • &ensp; Frontend Development: 
-                    </br>
-                        &emsp; &emsp; &nbsp; ◦ &ensp; Design the user interface using HTML, CSS, and JavaScript to ensure the site is interactive, user-friendly,
-                    </br>
-                        &emsp; &emsp; &emsp; &ensp; and displays visualizations effectively.
-                    </br></br>
-                        &emsp; • &ensp; Integration of Visualizations: 
-                    </br>
-                        &emsp; &emsp; &nbsp; ◦ &ensp; Embed the charts, maps, and analysis into the web interface for an interactive experience.</h4>
-                    
-                    <h3>Validation and Evaluation</h3>
-                    </br>
-                    <h4>&emsp; • &ensp; Validate predictions accuracy using techniques like cross-validation or holdout validation.
-                    </br>
-                        &emsp; • &ensp; Conduct user testing to ensure the website is intuitive, with clear visualizations and accurate analysis.</h4>
-                    
-                    <h3>Documentation and Reporting</h3>
-                    </br>
-                    <h4>&emsp; • &ensp; Document the entire process, including the data gathered, methodologies used, results from data analysis, 
-                    </br>
-                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; and design decisions for the website.
-                    </br>
-                        &emsp; • &ensp; Prepare a final presentation summarizing the project’s objectives, methodology, findings, 
-                    </br>
-                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; and visualizations.</h4>
+                    <div class="home">
+                        <div class="text-container">
+                            <h3>Component Setup</h3>
+                            </br>
+                            <ul>
+                                <li>Choose the necessary hardware, including Arduino Uno R3, RFID Reader Module, RFID card, LCD display, breadboard, and wires.</li>
+                                <li>Install Arduino IDE for programming and uploading code to the Arduino board.</li>
+                            </ul>
+
+                            <h3>Circuit Assembly</h3>
+                            </br>
+                            <ul>
+                                <li>Connect the RFID Reader Module to the Arduino Uno R3, ensuring proper wiring to ground, 5V, and digital pins (9, 10, 11, 12).</li>
+                                <li>Connect the LCD display screen to the Arduino, linking ground, 3.5V, analog input 4, and analog input 5.</li>
+                            </ul>
+                            
+                            <h3>RFID Authentication</h3>
+                            </br>
+                            <ul>
+                                <li>Write and upload a C++ program using Arduino IDE to read the UID tag from the RFID card.</li>
+                                <li>Implement logic to compare scanned UID with predefined authorized UIDs stored in the code.</li>
+                                <li>Display access status ("Access Granted" or "Access Denied") on the LCD screen.</li>
+                            </ul>
+                            
+                            <h3>Testing & Validation</h3>
+                            </br>
+                            <ul>
+                                <li>Scan an authorized RFID card and check if access is granted with a correct LCD message.</li>
+                                <li>Scan an unauthorized RFID card and ensure access is denied with the appropriate LCD message.</li>
+                                <li>Verify that all components function correctly and debug any errors in circuit connections or code.</li>
+                            </ul>
+                                
+                            <h3>Flowchart</h3>
+                            <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/flowchart" class="pg1">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="Demo" class="tabCon">
@@ -376,10 +366,12 @@
                     <h2>Demo</h2>
                 </div>
                 <div class="content">
-                    <a href="https://final-year-project-nxh0.onrender.com" class="demo-btn" target="_blank">🌐 Click me to go to the website!</a>
-                    <iframe width="800" height="600"
-                        src="https://www.youtube.com/embed/0decPLG7H5Y">
-                    </iframe>
+                    <h3>RFID Door Lock System when no card is shown</h3>
+                    <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/arduino1.png" class="pg">
+                    <h3>RFID Door Lock System when a wrong card is shown</h3>
+                    <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/arduino2.png" class="pg">
+                    <h3>RFID Door Lock System when a right card is shown</h3>
+                    <img src="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/arduino3.png" class="pg">
                 </div>
             </div>
         </div>
