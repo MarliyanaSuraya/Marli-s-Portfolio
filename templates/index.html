@@ -25,6 +25,15 @@
             background-color: #f8eddd;
         }
 
+        html, body {
+          max-width: 100%;
+          overflow-x: hidden;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+
         .header{
             position: fixed;
             top: 0;
@@ -373,7 +382,8 @@
 
         .rabbit {
             position: absolute;
-            height: 480px;
+            max-width: 100%;
+            height: auto;
             margin-left: 750px;
             margin-top: -950px;
             animation: wave 2s ease-in-out infinite;
@@ -765,57 +775,56 @@
         }
 
         @media (max-width: 768px) {
-              body {
-                  flex-direction: column;
-                  font-size: 14px;
-                  background-repeat: repeat-y;
-                  background-size: cover;
-              }
-
-              h1 {
-                  font-size: 40px;
-              }
-
-              .container2, .container3, .rabbit {
-                margin-left: auto !important;
-                margin-right: auto !important;
-              }
-            
-              .rabbit {
-                width: 100%;
-                height: auto;
-                margin-top: 20px;
-                position: relative;
-              }
+            body {
+              background-repeat: repeat-y;
+              background-size: cover;
+              font-size: 14px;
             }
-         
-              .container2 {
-                  flex-direction: column;
-                  min-height: auto; 
-                  margin: auto;
-              }
-  
-              .protitle, .contitle {
-                  text-align: center;
-                  margin: auto;
-              }
-  
-              .container3 {
-                  flex-direction: column;
-                  align-items: center;
-                  margin: auto;
-              }
-  
-              .button-container {
-                  flex-direction: column;
-                  gap: 15px;
-              }
-  
-              .button1, .button2, .button3 {
-                  width: 90%;
-                  max-width: 350px;
-                  margin: auto;
-              }
+          
+            h1 {
+              font-size: 40px;
+            }
+          
+            .container2,
+            .container3,
+            .rabbit,
+            .button-container {
+              margin-left: auto !important;
+              margin-right: auto !important;
+            }
+          
+            .container2,
+            .container3,
+            .button-container {
+              flex-direction: column;
+              align-items: center;
+            }
+          
+            .protitle,
+            .contitle {
+              margin: 20px auto;
+              text-align: center;
+            }
+          
+            .button1,
+            .button2,
+            .button3 {
+              width: 90% !important;
+              max-width: 350px;
+              margin: 10px auto;
+            }
+          
+            .rabbit {
+              width: 90%;
+              height: auto;
+              margin-top: 20px;
+              position: relative;
+            }
+          
+            .card {
+              width: 90%;
+              margin: 10px auto;
+            }
           }
 
     </style>
