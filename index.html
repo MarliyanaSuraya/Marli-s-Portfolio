@@ -2,7 +2,7 @@
 <html lang="en">
  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="icon" type="image/x-icon" href="C:\Users\marliyana\OneDrive\Desktop\portfolio\assets\icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,9 +19,19 @@
             overflow-x: hidden;
             overflow-y: auto;
             background-image: url('https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/background.png') ;
-            background-repeat: no-repeat;
+            background-repeat: repeat-y;
             background-size: 100%;
+            background-attachment: scroll;
             background-color: #f8eddd;
+        }
+
+        html, body {
+          max-width: 100%;
+          overflow-x: hidden;
+        }
+        
+        * {
+          box-sizing: border-box;
         }
 
         .header{
@@ -372,7 +382,8 @@
 
         .rabbit {
             position: absolute;
-            height: 480px;
+            max-width: 100%;
+            height: auto;
             margin-left: 750px;
             margin-top: -950px;
             animation: wave 2s ease-in-out infinite;
@@ -763,9 +774,53 @@
             height: 20px;
         }
 
+        @media (max-width: 768px) {
+            body {
+              background-repeat: repeat-y !important;
+              background-size: cover;
+              font-size: 14px;
+            }
+          
+            h1 {
+              font-size: 40px !important;
+            }
+          
+            .container2, .container3, .rabbit, .button-container {
+              margin-left: auto !important;
+              margin-right: auto !important;
+            }
+          
+            .container2, .container3, .button-container {
+              flex-direction: column;
+              margin: auto !important;
+            }
+          
+            .protitle, .contitle {
+              margin: 20px auto;
+              text-align: center;
+            }
+          
+            .button1, .button2,  .button3 {
+              width: 90% !important;
+              max-width: 350px;
+              margin: 10px auto;
+            }
+          
+            .rabbit {
+              width: 90%;
+              height: auto;
+              margin-top: 20px;
+              position: relative !important;
+            }
+          
+            .card {
+              width: 90%;
+              margin: 10px auto;
+            }
+          }
+
     </style>
     <link rel="icon" type="image/png" sizes="1024x1024" href="https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/favicon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
