@@ -51,18 +51,6 @@
         background-size: cover;
     }
 
-    body::before {
-        height: 100%;
-        margin: 0;
-        position: relative;
-        overflow-x: hidden;
-        width: 100%;
-        background-image: url('https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/bg5.png');
-        background-size: cover;
-        opacity: 0.5;
-    }
-
-
     .container{
         display: flex; 
         gap: 30px;
@@ -113,6 +101,8 @@
         animation-duration: 2s;
         animation-iteration-count: infinite;
         text-decoration: none;
+        -webkit-appearance: none;
+        color: black;
     }
 
     .tabs button:hover{
@@ -147,6 +137,7 @@
         padding: 5px 0px 5px 30px;
         margin: 30px 0 0 30px;
         box-sizing: border-box;
+        text-decoration: none;
     }
 
     .content{
@@ -236,14 +227,6 @@
     @media (max-width: 768px) {
 
         body {
-          background-repeat: repeat-y !important;
-          background-size: cover;
-          height: 100%;
-          font-size: auto;
-          background-position: top left;
-        }
-
-        body::before {
           background-repeat: repeat-y !important;
           background-size: cover;
           height: 100%;
