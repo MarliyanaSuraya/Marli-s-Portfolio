@@ -97,6 +97,7 @@
 
     .tabs {
       -webkit-tap-highlight-color: transparent;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
 
     .tabs button{
@@ -114,6 +115,8 @@
         padding: 5px 0px 5px 0px;
         animation-duration: 2s;
         animation-iteration-count: infinite;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
 
     .tabs button:hover{
@@ -234,8 +237,8 @@
     @media (max-width: 768px) {
 
         body::before {
-          background-size: cover;
-          background-repeat: repeat-y;
+          background-size: 100%;
+          background-repeat: repeat-y !important;
         }
 
         .container {
@@ -264,6 +267,7 @@
           flex-wrap: wrap;
           justify-content: center;
           -webkit-tap-highlight-color: transparent;
+          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         }
       
         .tabs button {
@@ -271,6 +275,8 @@
           margin: auto;
           font-size: 16px;
           height: 45px;
+          -webkit-tap-highlight-color: transparent;
+          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         }
       
         .box-title {
