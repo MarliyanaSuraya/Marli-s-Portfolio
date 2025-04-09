@@ -51,16 +51,17 @@
         background-size: cover;
     }
 
-    html {
-      * {
-        color: #000000;
-      }
+    body::before {
+        height: 100%;
+        margin: 0;
+        position: relative;
+        overflow-x: hidden;
+        width: 100%;
+        background-image: url('https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/bg5.png');
+        background-size: cover;
+        opacity: 0.5;
     }
 
-    body::before {
-      opacity: 0.5;
-      z-index: 1;
-    }
 
     .container{
         display: flex; 
@@ -235,6 +236,14 @@
     @media (max-width: 768px) {
 
         body {
+          background-repeat: repeat-y !important;
+          background-size: cover;
+          height: 100%;
+          font-size: auto;
+          background-position: top left;
+        }
+
+        body::before {
           background-repeat: repeat-y !important;
           background-size: cover;
           height: 100%;
