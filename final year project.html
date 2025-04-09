@@ -41,7 +41,7 @@
 
   <style>
 
-    body, html {
+    body {
         height: 100%;
         margin: 0;
         position: relative;
@@ -51,8 +51,15 @@
         background-size: cover;
     }
 
+    html {
+      * {
+        color: #000000;
+      }
+    }
+
     body::before {
       opacity: 0.5;
+      z-index: 1;
     }
 
     .container{
