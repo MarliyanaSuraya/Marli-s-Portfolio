@@ -47,6 +47,7 @@
         position: relative;
         overflow-x: hidden;
         width: 100%;
+        background-image: url('https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/bg5.png');
         background-size: cover;
     }
 
@@ -96,8 +97,7 @@
     }
 
     .tabs {
-      -webkit-tap-highlight-color: transparent;
-      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      text-decoration: none;
     }
 
     .tabs button{
@@ -115,8 +115,7 @@
         padding: 5px 0px 5px 0px;
         animation-duration: 2s;
         animation-iteration-count: infinite;
-        -webkit-tap-highlight-color: transparent;
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        text-decoration: none;
     }
 
     .tabs button:hover{
@@ -126,6 +125,7 @@
 
     .tabs button.active{
         background-color: #4a624a;
+        text-decoration: none;
     }
 
     @keyframes bounce {
@@ -238,9 +238,9 @@
 
     @media (max-width: 768px) {
 
-        body::before {
+        body {
           background-repeat: repeat-y !important;
-          background-size: 100%;
+          background-size: cover;
           height: 100%;
           font-size: auto;
           background-position: top left
