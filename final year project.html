@@ -51,6 +51,20 @@
         background-size: cover;
     }
 
+    body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('https://raw.githubusercontent.com/MarliyanaSuraya/Marli-s-Portfolio/refs/heads/main/assets/bg5.png');
+        background-size: cover;
+        filter: blur(0px);
+        z-index: -1;
+        opacity: 0.5;
+    }
+
     .container{
         display: flex; 
         gap: 30px;
@@ -226,7 +240,7 @@
 
     @media (max-width: 768px) {
 
-        body {
+        body::before {
           background-repeat: repeat-y !important;
           background-size: cover;
           height: 100%;
